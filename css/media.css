@@ -1,0 +1,24 @@
+/* Mobiles */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column; }
+  .download-apps {
+    flex-direction: column;
+    align-items: center; }
+    .download-apps a {
+      margin: 0 0 20px 0; }
+  .text-heading, .text-supp {
+    text-align: center; }
+  .heading, .text-heading {
+    font-size: 28px;
+    line-height: 31px; }
+  .btn {
+    width: 243px; }
+  .btn.big {
+    padding: 15px 20px; }
+  .slide-content {
+    margin-top: 35px; }
+  .pool-list .prize-item {
+    margin-bottom: 32px; }
+    .pool-list .prize-item:nth-last-child() {
+      margin-bottom: 0; } }

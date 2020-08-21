@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Петелинка</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+	
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
+	<link rel="stylesheet" href="libs/scrollbar/jquery.scrollbar.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--[if lte IE 9]>
+    <script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header class="main-header">
+		<div class="inner-container">
+			<div class="header">
+				<div class="header-brand">
+					<a href="#">
+						<img src="img/brand.svg" alt="Петелинка">
+					</a>
+
+					<a href="#" class="go-home-link desktop-visible"><img src="img/arrow-right-red.svg">www.petelinka.ru</a>
+				</div>
+
+				<a href="#" class="burger"></a>
+
+				<div class="header-container">
+					<div class="header-personal">
+						<!-- If registered -->
+						<div class="header-user-profile">
+							<img class="header-user-pic" src="img/user.svg">
+							<span class="header-user-name">Константин Константинопольский</span>
+							<img class="header-user-arrow" src="img/arrow-down-green.svg">
+							<div class="hover-fix"></div>
+
+							<div class="header-profile-list">
+								<ul>
+									<li>
+										<a href="#">
+											<span class="user-list-option">Персональные данные</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<span class="user-list-option">Мои чеки</span>
+											<span class="user-list-number">6</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<span class="user-list-option">Мои баллы</span>
+											<span class="user-list-number">250</span>
+										</a>
+									</li>
+
+									<li>
+										<a href="#">
+											<span class="user-list-option">Мои призы</span>
+											<span class="user-list-number">3</span>
+										</a>
+									</li>
+								</ul>
+								
+								<a href="#" class="btn btn-white btn-logout">Выйти</a>
+							</div>
+						</div>
+						<!-- If registered END -->
+
+						<!--  Log/reg/points btns  -->
+						<div class="log-btns">
+							<!-- If not registered -->
+							<a href="#" class="btn btn-log btn-white pop-op" data-popup="log">Войти</a>
+							<a href="#" class="btn btn-reg btn-white pop-op" data-popup="reg">Зарегистрироваться</a> 
+							<!-- If not registered END -->
+
+							<!-- If registered -->
+							<!-- <a href="#" class="btn btn-white btn-prize"><img src="img/icon-prize.svg" class="icon-prize">Ваш баланс: 250 баллов</a> -->
+							<!-- If registered END -->
+						</div>
+						<!--  Log/reg/points btns END -->
+					</div>
+
+					<div class="header-nav">
+						<ul class="header-nav-menu">
+							<li><a href="#" class="active">Главная</a></li>
+							<li><a href="#">Правила акции</a></li>
+							<li><a href="#">Призы</a></li>
+							<li><a href="#">Розыгрыш</a></li>
+							<li><a href="#">Задать вопрос</a></li>
+						</ul>
+
+						<a href="#" class="btn btn-green reg-receipt">зарегистрировать чек</a>
+					</div>
+
+					<img src="img/mobile-red-line.png" class="mobile-redline mobile-visible">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main-content">
+		<img src="img/wide-red-line.png" class="wide-redline-top">
+
+		<section class="main-slider">
+			<div class="slider-item" style="background-image: url(img/bg-big-wood.png);">
+				<div class="inner-container">
+					<div class="slide-content">
+						<p class="text-heading desktop-visible">Скачивайте<br>мобильное приложение</p>
+						<p class="text-heading mobile-visible">Скачивайте мобильное приложение</p>
+						<p class="text-supp desktop-visible">и получайте дополнительные бонусы,<br> выигрывайте призы</p>
+						<p class="text-supp mobile-visible">и получайте дополнительные бонусы, выигрывайте призы</p>
+						
+						<div class="download-apps">
+							<a href="#">
+								<img class="slider-img" src="img/download-apple.png" alt="">
+							</a>
+
+							<a href="#">
+								<img class="slider-img" src="img/download-google.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item"  style="background-image: url(img/bg-prize-boxes.png);">
+				<div class="inner-container">
+					<div class="slide-content">
+						<p class="text-heading">Обновленный клуб<br> «Моя Петелинка»</p>
+						<p class="text-supp">Дарим подарки за покупки!</p>
+						<a href="#" class="btn btn-green reg-receipt big">зарегистрировать чек</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="red-promo-outer">
+			<div class="inner-container">
+				<h2 class="heading red">Загружай чеки - получай подарки!</h2>
+
+				<div class="red-promo">
+					<div class="row">
+						<div class="item">
+							<img class="item-img" src="img/bran-red-lines.svg">
+							<p class="item-name">Покупай продукты «Петелинка»</p>
+						</div>
+
+						<div class="item">
+							<img class="item-img" src="img/talon-red-lines.svg">
+							<p class="item-name">Регистрируй кассовые чеки и копи баллы</p>
+						</div>
+
+						<div class="item">
+							<img class="item-img" src="img/prizes-red-line.svg">
+							<p class="item-name">Выбирай призы из каталога</p>
+						</div>
+					</div>
+
+					<div class="align-center">
+						<a href="#" class="btn btn-green reg-receipt big">зарегистрировать чек</a>
+					</div>
+
+					<a class="read-rules">Читать полные правила программы</a>
+				</div>
+			</div>
+		</section>
+		
+		<section class="prize-slider-outer">
+			<div class="inner-container">
+				<h2 class="heading">Каталог призов</h2>
+
+				<div class="prize-slider">
+					
+					<!-- Prize slider item -->
+					<div class="slider-item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<div class="prize-content-inner">
+									<img src="img/static-lopata.png">
+									<p class="prize-name">Силиконовая лопатка</p>
+									<p class="prize-price">300 баллов</p>
+								</div>
+							</div>
+	
+							<div class="prize-footer default">
+								<p>заказать</p>
+							</div>
+						</a>
+					</div>
+					<!-- Prize slider item END -->
+
+					<!-- Prize slider item -->
+					<div class="slider-item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<div class="prize-content-inner">
+									<img src="img/static-lopata.png">
+									<p class="prize-name">Молоток для мяса</p>
+									<p class="prize-price">300 баллов</p>
+								</div>
+							</div>
+	
+							<div class="prize-footer default">
+								<p>заказать</p>
+							</div>
+						</a>
+					</div>
+					<!-- Prize slider item END -->
+
+					<!-- Prize slider item -->
+					<div class="slider-item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<div class="prize-content-inner">
+									<img src="img/static-lopata.png">
+									<p class="prize-name">Ланчбокс</p>
+									<p class="prize-price">300 баллов</p>
+								</div>
+							</div>
+	
+							<div class="prize-footer default">
+								<p>заказать</p>
+							</div>
+						</a>
+					</div>
+					<!-- Prize slider item END -->
+
+					<!-- Prize slider item -->
+					<div class="slider-item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<div class="prize-content-inner">
+									<img src="img/static-lopata.png">
+									<p class="prize-name">Разделочная доска</p>
+									<p class="prize-price">300 баллов</p>
+								</div>
+							</div>
+	
+							<div class="prize-footer default">
+								<p>заказать</p>
+							</div>
+						</a>
+					</div>
+					<!-- Prize slider item END -->
+
+					<!-- Prize slider item -->
+					<div class="slider-item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<div class="prize-content-inner">
+									<img src="img/static-lopata.png">
+									<p class="prize-name">Френч-пресс</p>
+									<p class="prize-price">300 баллов</p>
+								</div>
+							</div>
+	
+							<div class="prize-footer default">
+								<p>заказать</p>
+							</div>
+						</a>
+					</div>
+					<!-- Prize slider item END -->
+
+					<!-- Prize slider item -->
+					<div class="slider-item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<div class="prize-content-inner">
+									<img src="img/static-lopata.png">
+									<p class="prize-name">Набор соусниц</p>
+									<p class="prize-price">300 баллов</p>
+								</div>
+							</div>
+	
+							<div class="prize-footer default">
+								<p>заказать</p>
+							</div>
+						</a>
+					</div>
+					<!-- Prize slider item END -->
+
+					<!-- Prize slider item -->
+					<div class="slider-item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<div class="prize-content-inner">
+									<img src="img/static-lopata.png">
+									<p class="prize-name">Набор шпината</p>
+									<p class="prize-price">300 баллов</p>
+								</div>
+							</div>
+	
+							<div class="prize-footer default">
+								<p>заказать</p>
+							</div>
+						</a>
+					</div>
+					<!-- Prize slider item END -->
+
+					<!-- Prize slider item -->
+					<div class="slider-item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<div class="prize-content-inner">
+									<img src="img/static-lopata.png">
+									<p class="prize-name">Набор соусниц для</p>
+									<p class="prize-price">300 баллов</p>
+								</div>
+							</div>
+	
+							<div class="prize-footer default">
+								<p>заказать</p>
+							</div>
+						</a>
+					</div>
+					<!-- Prize slider item END -->
+				</div>
+	
+				<div class="align-center">
+					<a href="#" class="btn btn-green big curse">все призы</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="big-pool-promo">
+			<div class="inner-container">
+				<h2 class="heading red">Большой розыгрыш призов</h2>
+				<p class="text-supp">Накапливай баллы и учавствуй в розыгрыше ценных призов!</p>
+
+				<div class="row pool-list">
+					<!-- Big prizes item -->
+					<div class="item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<img src="img/static-devices.png">
+							</div>
+	
+							<div class="prize-footer default">
+								<p class="prize-name">Наборы Посуды Gipfel</p>
+								<p class="prize-price">350 баллов</p>
+							</div>
+						</a>
+					</div>
+					<!-- Big prizes item END-->
+
+					<!-- Big prizes item -->
+					<div class="item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<img src="img/static-devices.png">
+							</div>
+	
+							<div class="prize-footer default">
+								<p class="prize-name">Сертификаты Re:store</p>
+								<p class="prize-price">700 баллов</p>
+							</div>
+						</a>
+					</div>
+					<!-- Big prizes item END-->
+					
+					<!-- Big prizes item -->
+					<div class="item prize-item">
+						<a href="#" class="prize-item-inner">
+							<div class="prize-content">
+								<img src="img/static-devices.png">
+							</div>
+	
+							<div class="prize-footer default">
+								<p class="prize-name">Сертификаты на кухню мечты</p>
+								<p class="prize-price">300 баллов</p>
+							</div>
+						</a>
+					</div>
+					<!-- Big prizes item END-->					
+				</div>
+
+				<div class="align-center">
+					<a href="#" class="btn btn-green big curse">подробнее</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="wide-download-app">
+			<div class="inner-container">
+				<p class="text-heading desktop-visible">Скачивайте<br>мобильное приложение</p>
+				<p class="text-heading mobile-visible">Скачивайте мобильное приложение</p>
+				<p class="text-supp desktop-visible">и получайте дополнительные бонусы,<br> выигрывайте призы</p>
+				<p class="text-supp mobile-visible">и получайте дополнительные бонусы, выигрывайте призы</p>
+
+				<div class="download-apps">
+					<a href="#">
+						<img class="slider-img" src="img/download-apple.png" alt="">
+					</a>
+
+					<a href="#">
+						<img class="slider-img" src="img/download-google.png" alt="">
+					</a>
+				</div>
+			</div>
+		</section>
+
+	</section>
+
+	<footer class="main-footer">
+		<div class="main-footer-contacts">
+			<div class="inner-container">
+				<div class="main-footer-inner">
+					<div class="footer-email">
+						<a href="#" class="btn btn-red mail-us">написать письмо <img class="mail-icon" src="img/mail.svg"></a>
+	
+						<p>Свяжитесь с нами, если у вас возникли вопросы по работе сайта, качеству товара или сотрудничеству</p>
+					</div>
+	
+					<div class="footer-hotline">
+						<p class="phone-info">горячая линия</p>
+						<a class="phone-number" href="tel:88002341150"><img src="img/phone.svg" class="phone-icon">8 800 234 11 50</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer-brand">
+				<a href="#">
+					<img src="img/brand.svg" class="footer-logo" alt="Петелинка">
+				</a>
+			</div>
+
+			<a href="#" class="go-home-link"><img src="img/arrow-right-red.svg">www.petelinka.ru</a>
+
+			<span class="prizes-are-real">*	изображения призов могут отличаться от реальных</span>
+
+			<a href="#" class="btn btn-viber"><img src="img/viber.svg">зарегистрировать чек</a>
+
+			<ul class="footer-soc-btns">
+				<li><a class="btn-social icon-vk" href="#"></a></li>
+				<li><a class="btn-social icon-ok" href="#"></a></li>
+				<li><a class="btn-social icon-face" href="#"></a></li>
+				<li><a class="btn-social icon-insta" href="#"></a></li>
+				<li><a class="btn-social icon-youtube" href="#"></a></li>
+				<li><a class="btn-social icon-star" href="#"></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Popups  -->
+	<div class="popups">
+		<div id="reg" class="popup ">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+				</a>
+				<div class="popup-inner">
+					<div class="popup-title">Регистрация</div>
+					<div class="popup-error"></div>
+	
+					<form class="popup-form" novalidate="novalidate">
+						<div class="input-field">
+							<input type="text" name="lastName" placeholder="Фамилия" required="">
+						</div>
+	
+						<div class="input-field">
+							<input type="text" name="name" placeholder="Имя" required="">
+						</div>
+	
+						<div class="input-field">
+							<input type="text" name="email" placeholder="E-mail" required="">
+						</div>
+	
+						<div class="input-field">
+							<input type="text" name="phone" class="phone-mask" placeholder="Телефон" required="">
+						</div>
+	
+	
+						<div class="input-field">
+							<input type="text" name="city" placeholder="Город" required="">
+						</div>					
+	
+	
+						<div class="checkbox-wrapper">
+							<div class="input-field checkbox-field">
+								<label for="checkRules" class="checkbox">
+									<input id="checkRules" name="checkRules" type="checkbox" required="">
+									<span class="checkmark"></span>
+									<p class="checkbox-text">Я согласен с <a href="#!" class="rules-link link" target="_blank">Правилами акции</a></p>
+								</label> 
+							</div>
+	
+							<div class="input-field checkbox-field">
+								<label for="checkData" class="checkbox">
+									<input id="checkData" name="checkData" type="checkbox" required="">
+									<span class="checkmark"></span>
+									<p class="checkbox-text personal-data-text">Я согласен на обработку моих персональных данных</p>
+								</label> 
+							</div>
+						</div>
+	
+						<div class="btn-wrap">
+							<button class="btn btn-green">отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="log" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+				</a>
+				<div class="popup-inner">
+					<div class="popup-title">Вход в личный кабинет</div>
+					<div class="popup-error"></div>
+	
+					<form class="popup-form" novalidate="novalidate">
+						<div class="input-field">
+							<input type="text" name="login" placeholder="E-mail / телефон" required="">
+						</div>
+	
+						<div class="input-field">
+							<input type="password" name="password" placeholder="Пароль" required="">
+						</div>					
+		
+						<div class="btn-wrap">
+							<button class="btn btn-green">войти</button>
+						</div>
+					</form>
+
+					<div class="popup-links">
+						<a href="#" class="link pop-op" data-popup="restore-password">Восстановить пароль</a>
+						<a href="#" class="link reg-link pop-op" data-popup="reg">Зарегистрироваться</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="restore-password" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+				</a>
+				<div class="popup-inner">
+					<div class="popup-title">Восстановление пароля</div>
+					<div class="popup-error"></div>
+	
+					<form class="popup-form" novalidate="novalidate">
+						<p class="popup-desc before-send">Укажите телефон или e-mail, на который производилась регистрация</p>
+						<p class="popup-desc after-send" style="display: none;">Пароль был отправлен</p>
+						
+						<div class="input-field">
+							<input type="text" name="login" placeholder="E-mail / телефон" required="">
+						</div>
+
+						<div class="input-field">
+							<p class="clock-text" style="display: none;">Можно отправить повторно через <span class="clock"></span></p>
+                    	</div>
+	
+						<div class="btn-wrap">
+							<button class="btn btn-green">отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popups END  -->
+
+
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<script src="libs/select2/select2.min.js"></script>
+	<script src="libs/jquery.validate.min.js"></script>
+	<script src="libs/scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="libs/jquery.inputmask.min.js"></script>
+	<script src="libs/jquery.countdown.min.js"></script>
+	<script src="libs/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
