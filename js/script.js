@@ -50,8 +50,6 @@ $(document).ready(function () {
         }
     });
 
-
-
     // example init scrollbar for tables
     $('.table-wrapper').scrollbar();
 
@@ -98,6 +96,22 @@ $(document).ready(function () {
                         error.insertBefore(element);
                     }
                 },
+                highlight: function (element, errorClass, validClass){
+                    var elem = $(element);
+                    if (elem.hasClass("select2-hidden-accessible")) {
+                        $(elem).parent().find('.select2-selection--single').addClass('select2'+ errorClass); 
+                    } else {
+                        elem.addClass(errorClass);
+                    }
+                },    
+                unhighlight: function (element, errorClass, validClass){
+                    var elem = $(element);
+                    if (elem.hasClass("select2-hidden-accessible")) {
+                        $(elem).parent().find('.select2-selection--single').removeClass('select2' + errorClass);
+                    } else {
+                        elem.removeClass(errorClass);
+                    }
+                },
                 messages: {
                     phone: 'Некорректный номер',
                     email: 'Некорректный e-mail',
@@ -119,7 +133,7 @@ $(document).ready(function () {
     checkValidate();
 
     // init select2
-    if($('.select').length > 1) {
+    if($('.select:not(.select-search)').length > 1) {
         var parent = $('select').parents('.select');
         $('select').each(function() {
             let $this = $(this);
@@ -130,11 +144,26 @@ $(document).ready(function () {
             });
         });
     } else {
-        $('select').select2({
+        $('select:not(.select-search)').select2({
             minimumResultsForSearch: Infinity,
             dropdownParent: $('.select')
         });
     }
+
+    // init select2 with search
+    $('.select-search').each(function() {
+        let $this = $(this);
+        let parent = $(this).parents('.select');
+        $this.select2({
+            minimumResultsForSearch: 4,
+            dropdownParent: parent,
+            language: {
+                noResults: function (params) {
+                    return "Неправильное название.";
+                }
+            }
+        });
+    });
 
     // восстановление пароля
     $('#restore-password .btn').click(function(e){
