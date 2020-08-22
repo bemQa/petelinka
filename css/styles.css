@@ -35,7 +35,6 @@
 
 .input-field {
   position: relative;
-  width: 100%;
   margin: 0 auto 15px; }
 
 .close-popup {
@@ -54,6 +53,10 @@
   border-radius: 10px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
   transition: all .2s linear; }
+
+.input-field input:not([type="checkbox"]):disabled, .input-field textarea:disabled {
+  background-color: #E5E5E5;
+  pointer-events: none; }
 
 .checkbox-text {
   padding: 3px 0 0 35px;
@@ -78,11 +81,14 @@ p.error {
   color: #AB2328; }
 
 input[type=text].error, input[type=password].error, .select2-selection--single.select2error {
-  border: 1px solid #AB2328;
+  border: 1px solid #AB2328 !important;
   color: #AB2328; }
 
 .select2error .select2-selection__placeholder {
   color: #AB2328 !important; }
+
+.select2error .select2-selection__arrow {
+  display: none; }
 
 span.error {
   position: absolute;
@@ -99,6 +105,31 @@ span.error {
 
 .personal-data-text {
   width: 80%; }
+
+.personal-content-inner .input-field input:not([type="checkbox"]), .personal-content-inner .input-field textarea, .personal-content-inner .select2-container .select2-selection--single, .personal-content-inner select {
+  border: 1px solid #C4C4C4;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1); }
+
+.personal-content-inner .input-field input:not([type="checkbox"]), .personal-content-inner .input-field textarea, .personal-content-inner .select2-container .select2-selection--single, .personal-content-inner .select, .personal-content-inner .day-of-birth {
+  width: 367px; }
+
+.personal-content-inner .input-field input[type="search"] {
+  width: 100%; }
+
+.personal-content-inner .input-field input:not([type="checkbox"]), .personal-content-inner .input-field textarea, .personal-content-inner .select2-container .select2-selection--single {
+  padding-left: 14px; }
+
+.personal-content-inner .day-of-birth .select2-container .select2-selection--single, .personal-content-inner .day-of-birth select {
+  width: 100%; }
+
+.personal-content-inner .select-day {
+  flex-basis: 27%; }
+
+.personal-content-inner .select-month {
+  flex-basis: 38%; }
+
+.personal-content-inner .select-year {
+  flex-basis: 27%; }
 
 /* Normalize styles */
 html {
@@ -390,16 +421,15 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
 /**/
 /* Example Select2 */
 .select {
-  max-width: 410px;
-  min-width: 140px;
   width: 100%;
+  position: relative;
   /*margin: 10px auto;*/ }
 
 .select select {
   width: 100%; }
 
 .select2 {
-  z-index: 9; }
+  z-index: 2; }
 
 .select2-dropdown {
   z-index: 7 !important; }
@@ -454,8 +484,6 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12); }
 
 .select2-container--open .select2-dropdown--below {
-  padding-top: 30px;
-  top: -30px;
   border-radius: 0;
   border: 1px solid #C4C4C4;
   z-index: 1; }
@@ -1151,9 +1179,124 @@ body {
   margin-top: -66px; }
   .user-profile .user-list-option {
     font-weight: normal; }
+  .user-profile li.active {
+    background-color: rgba(122, 169, 46, 0.3); }
 
 .personal-content {
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.user-profile-pic {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 14px; }
+
+.personal-content-inner {
+  margin-top: 25px;
+  flex-basis: 67%; }
+  .personal-content-inner .heading {
+    font-size: 40px;
+    line-height: 59px;
+    text-align: left; }
+  .personal-content-inner label {
+    width: 185px; }
+  .personal-content-inner .input-field {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start; }
+
+.data-section {
+  margin-bottom: 44px; }
+  .data-section .btn {
+    margin-left: 185px; }
+  .data-section .heading {
+    font-size: 40px;
+    line-height: 59px;
+    margin-bottom: 11px; }
+
+.pass-section {
+  margin: 30px 0 60px; }
+  .pass-section .btn {
+    margin-left: 185px; }
+  .pass-section .heading {
+    font-size: 25px;
+    line-height: 37px;
+    margin-bottom: 13px; }
+
+.day-of-birth {
+  display: flex;
+  justify-content: space-between; }
+
+.personal-settings {
+  margin-top: 10px; }
+
+hr {
+  color: #C4C4C4; }
+
+.txt-green {
+  color: #7AA92E; }
+
+.table {
+  width: 100%;
+  text-align: center; }
+  .table .table-head, .table .inner {
+    color: #000;
+    opacity: 0.6; }
+  .table .table-body {
+    font-weight: bold; }
+  .table .check-photo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center; }
+  .table .table-row {
+    display: flex;
+    height: 57px;
+    align-items: center;
+    justify-content: space-between; }
+  .table .inner {
+    display: none; }
+  .table .cell-date {
+    order: 1;
+    flex-basis: 17%; }
+  .table .cell-photo {
+    order: 2;
+    flex-basis: 25%; }
+  .table .cell-status {
+    order: 3;
+    flex-basis: 25%; }
+  .table .cell-coins {
+    order: 4;
+    flex-basis: 33%; }
+  .table .table-body {
+    max-height: 384px;
+    overflow-y: auto; }
+  .table .bad-check .inner-status-content {
+    color: #AB2328;
+    text-decoration: underline; }
+  .table .bad-check .check-photo {
+    border-color: #AB2328; }
+  .table .bad-check .inner-coins-content {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/icon-no-prize.svg) no-repeat; }
+
+.check-table {
+  margin-bottom: 40px; }
+
+.personal-check {
+  padding-bottom: 59px; }
+
+@media (max-width: 1280px) {
+  .header-brand {
+    margin-left: 0; }
+    .header-brand .go-home-link {
+      display: none; } }
 
 @media (max-width: 1000px) {
   .main-container {
@@ -1196,6 +1339,8 @@ body {
     margin-bottom: 32px; }
     .pool-list .prize-item:nth-last-child() {
       margin-bottom: 0; }
+  .personal-content-inner .input-field {
+    display: flex; }
   .header-brand {
     width: 117px;
     height: auto;
@@ -1315,13 +1460,70 @@ body {
     top: 10px;
     right: 10px; }
   .main-content-header {
-    height: 375px; }
+    height: 375px;
+    background-position: center; }
     .main-content-header .heading {
-      text-align: center; } }
+      text-align: center;
+      font-size: 28px;
+      line-height: 31px; }
+  .user-profile-pic {
+    width: 64px;
+    height: 64px; }
+  .personal-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px; }
+  .personal-settings .btn {
+    margin-left: 0; }
+  .table .check-table thead {
+    display: none; }
+  .table .inner {
+    display: block; }
+  .table .check-photo {
+    width: 32px;
+    height: 32px; }
+  .table .cell-date {
+    order: 2; }
+  .table .cell-photo {
+    order: 1; }
+  .check-table .table-head {
+    display: none; } }
 
 @media (max-width: 800px) {
   .mobile-redline {
     margin-bottom: -45px; } }
+
+@media (max-width: 650px) {
+  .personal-content .input-field label, .personal-content .input-field input:not([type="checkbox"]), .personal-content .input-field textarea, .personal-content .select2-container .select2-selection--single, .personal-content .select, .personal-content .day-of-birth {
+    width: 100%; }
+  .personal-content .input-field label {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 15px; }
+  .personal-content-inner .input-field {
+    flex-direction: column;
+    display: inline-flex; }
+  .data-section {
+    margin-bottom: 32px; }
+    .data-section .heading {
+      font-size: 28px;
+      line-height: 31px;
+      text-align: center;
+      margin-bottom: 15px; }
+  .pass-section {
+    margin: 30px 0 48px; }
+    .pass-section .heading {
+      font-size: 21px;
+      line-height: 31px;
+      text-align: center;
+      margin-bottom: 15px; }
+  .personal-settings .btn {
+    margin: 17px auto 0;
+    display: block; }
+  .input-field {
+    width: 100%; } }
 
 @media (max-width: 450px) {
   .mobile-redline {
