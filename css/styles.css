@@ -380,7 +380,7 @@ body .scroll-element .scroll-bar {
   border-radius: 0; }
 
 body .scroll-element .scroll-element_track {
-  background: #85312C;
+  background: #C4C4C4;
   left: 0;
   width: 2px; }
 
@@ -663,10 +663,12 @@ body {
   display: inline-block;
   padding: 7px 11px;
   border-radius: 5px;
-  text-align: center; }
+  text-align: center;
+  transition: all .3s linear; }
   .btn.big {
     font-size: 18px;
-    padding: 15px 45px; }
+    padding: 15px 45px;
+    font-variant: small-caps; }
   .btn.curse {
     font-variant: small-caps; }
   .btn:disabled, .btn[disabled], .btn.disabled {
@@ -683,10 +685,21 @@ body {
 .btn-green {
   background-color: #7AA92E;
   color: #fff; }
+  .btn-green:hover {
+    background-color: #6c9529; }
+
+.btn-yellow {
+  background-color: #FFB81C;
+  color: #000;
+  font-weight: bold; }
+  .btn-yellow:hover {
+    background-color: #ffc036; }
 
 .btn-red {
   background-color: #AB2328;
   color: #fff; }
+  .btn-red:hover {
+    background-color: #c0272d; }
 
 .btn-reg {
   border-top-left-radius: 0;
@@ -779,18 +792,18 @@ body {
   margin-right: auto;
   margin-top: 10px; }
 
-.header-nav-menu a {
-  color: #000;
-  font-weight: bold;
-  line-height: 24px;
-  margin: 0 13px; }
-
-.header-nav-menu .active {
-  border-bottom: 2px solid #FFB81C; }
-
-.header-nav-menu li {
-  float: left;
-  display: block; }
+.header-nav-menu {
+  margin-right: 20px; }
+  .header-nav-menu a {
+    color: #000;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0 13px; }
+  .header-nav-menu .active {
+    border-bottom: 2px solid #FFB81C; }
+  .header-nav-menu li {
+    float: left;
+    display: block; }
 
 .reg-receipt {
   font-weight: bold;
@@ -871,7 +884,8 @@ body {
   height: 52px; }
 
 .footer-soc-btns li {
-  float: left; }
+  float: left;
+  height: 32px; }
 
 .btn-viber {
   font-variant: small-caps;
@@ -1244,7 +1258,9 @@ hr {
     color: #000;
     opacity: 0.6; }
   .table .table-body {
-    font-weight: bold; }
+    font-weight: bold;
+    max-height: 341px;
+    overflow-y: auto; }
   .table .check-photo {
     display: inline-block;
     width: 50px;
@@ -1260,37 +1276,230 @@ hr {
     justify-content: space-between; }
   .table .inner {
     display: none; }
-  .table .cell-date {
-    order: 1;
-    flex-basis: 17%; }
-  .table .cell-photo {
-    order: 2;
-    flex-basis: 25%; }
-  .table .cell-status {
-    order: 3;
-    flex-basis: 25%; }
-  .table .cell-coins {
-    order: 4;
-    flex-basis: 33%; }
-  .table .table-body {
-    max-height: 384px;
-    overflow-y: auto; }
   .table .bad-check .inner-status-content {
     color: #AB2328;
     text-decoration: underline; }
   .table .bad-check .check-photo {
-    border-color: #AB2328; }
+    border: 2px solid #AB2328; }
   .table .bad-check .inner-coins-content {
     display: inline-block;
     width: 15px;
     height: 15px;
     background: url(../img/icon-no-prize.svg) no-repeat; }
 
+.personal-coins {
+  margin-bottom: 59px; }
+
 .check-table {
   margin-bottom: 40px; }
+  .check-table .cell-date {
+    order: 1;
+    flex-basis: 17%; }
+  .check-table .cell-photo {
+    order: 2;
+    flex-basis: 25%; }
+  .check-table .cell-status {
+    order: 3;
+    flex-basis: 25%; }
+  .check-table .cell-coins {
+    order: 4;
+    flex-basis: 33%; }
 
 .personal-check {
   padding-bottom: 59px; }
+
+.coins-table .inner {
+  display: block; }
+
+.coins-table .table-row {
+  align-items: flex-start;
+  text-align: left;
+  min-height: 57px; }
+
+.coins-table .cell-date {
+  flex-basis: 20%;
+  text-align: center; }
+
+.coins-table .cell-desc {
+  flex-basis: 53%; }
+
+.coins-table .cell-coins {
+  flex-basis: 22%;
+  text-align: center; }
+
+.coins-table .success .inner-coins-content {
+  color: #7AA92E; }
+
+.coins-table .fail .inner-coins-content {
+  color: #AB2328; }
+
+.how-to-get-coins {
+  margin-top: 43px; }
+  .how-to-get-coins .prize-content-inner {
+    justify-content: flex-start; }
+  .how-to-get-coins .table-container {
+    margin-bottom: 15px; }
+  .how-to-get-coins .prize-item {
+    height: 215px;
+    width: 189px;
+    margin-bottom: 15px; }
+    .how-to-get-coins .prize-item:first-of-type {
+      margin-left: 0; }
+    .how-to-get-coins .prize-item:last-of-type {
+      margin-right: 0; }
+    .how-to-get-coins .prize-item .prize-name {
+      margin: 0;
+      padding: 0 6%; }
+    .how-to-get-coins .prize-item .prize-item-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%; }
+    .how-to-get-coins .prize-item .prize-price {
+      color: #7AA92E;
+      font-weight: bold;
+      font-size: 31px;
+      line-height: 31px;
+      padding: 25px 0; }
+    .how-to-get-coins .prize-item .prize-content {
+      height: 100%; }
+    .how-to-get-coins .prize-item .prize-content-inner {
+      padding-left: 0;
+      padding-right: 0; }
+  .how-to-get-coins .heading {
+    color: #AB2328;
+    font-size: 31px;
+    line-height: 46px; }
+  .how-to-get-coins .prize-container {
+    margin-top: 19px; }
+    .how-to-get-coins .prize-container .prize-item:nth-child(3n+1) {
+      margin-left: 0; }
+
+.personal-head {
+  margin-bottom: 15px; }
+
+.choose-prize .prize-item {
+  width: 30%;
+  height: 366px; }
+  .choose-prize .prize-item:first-of-type {
+    margin-left: 0; }
+  .choose-prize .prize-item:last-of-type {
+    margin-right: 0; }
+  .choose-prize .prize-item:nth-child(3n+1) {
+    margin-left: 0; }
+
+.choose-prize .prize-status {
+  width: 100%;
+  text-align: center; }
+
+.choose-prize .prize-content {
+  height: 302px; }
+
+.choose-prize .prize-footer {
+  height: 64px; }
+
+.choose-prize .prize-price {
+  margin: 20px 0 25px; }
+
+.choose-prize .date-label {
+  color: #666666; }
+
+.choose-prize .date-value {
+  font-weight: bold; }
+
+.choose-prize .prize-cont-combo {
+  padding-top: 13px; }
+
+.prize-item.success .prize-footer {
+  background-color: #7AA92E; }
+
+.prize-item.nego {
+  pointer-events: none; }
+  .prize-item.nego .prize-footer {
+    background-color: #C4C4C4; }
+
+.prize-item.default {
+  pointer-events: none; }
+  .prize-item.default .prize-footer {
+    background-color: #FFB81C; }
+
+.personal-prizes {
+  margin-bottom: 65px; }
+  .personal-prizes .prize-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center; }
+
+.prize-preview {
+  height: 143px;
+  width: auto; }
+
+.header-cut {
+  margin-top: -67px;
+  background-color: #fff; }
+
+.prizes-content {
+  padding-top: 52px; }
+  .prizes-content .heading {
+    font-size: 40px; }
+
+.heading-supp {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px; }
+
+.level-container {
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 27px;
+  margin: 26px 0; }
+  .level-container:first-of-type {
+    margin-top: 32px; }
+
+.lvl-info {
+  flex-basis: 34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.lvl-desc {
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 300; }
+
+.lvl-roll-price {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 47px; }
+
+.roll-prizes {
+  flex-basis: 66%; }
+  .roll-prizes .prize-item {
+    margin: 0 9px; }
+    .roll-prizes .prize-item:first-of-type {
+      margin-left: 0; }
+    .roll-prizes .prize-item:last-of-type {
+      margin-right: 0px; }
+  .roll-prizes .prize-item {
+    width: 226px; }
+  .roll-prizes .prize-name {
+    height: 50px;
+    font-size: 23px;
+    line-height: 25px;
+    padding: 0 6%;
+    margin-bottom: 13px; }
+  .roll-prizes .prize-content-inner {
+    padding-top: 12px;
+    padding-bottom: 12px; }
+    .roll-prizes .prize-content-inner .align-center {
+      width: 100%;
+      height: 141px; }
+  .roll-prizes .prize-content {
+    height: 244px; }
 
 @media (max-width: 1280px) {
   .header-brand {
@@ -1483,12 +1692,89 @@ hr {
   .table .check-photo {
     width: 32px;
     height: 32px; }
-  .table .cell-date {
-    order: 2; }
-  .table .cell-photo {
-    order: 1; }
+  .table .table-row {
+    padding: 0 15px; }
+  .table .inner-date-content, .table .inner-status-content, .table .inner-coins-content, .table .inner-desc-content {
+    font-size: 14px;
+    line-height: 21px; }
+  .check-table, .coins-table {
+    width: 100%;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0; }
   .check-table .table-head {
-    display: none; } }
+    display: none; }
+  .check-table .cell-date {
+    order: 2;
+    flex-basis: 26%; }
+  .check-table .cell-photo {
+    order: 1;
+    flex-basis: 13%; }
+  .check-table .cell-coins {
+    flex-basis: 30%; }
+  .check-table .cell-status {
+    flex-basis: 31%; }
+  .coins-outer {
+    text-align: center; }
+  .coins-table .inner {
+    opacity: 1; }
+  .coins-table .table-head {
+    font-size: 12px;
+    line-height: 18px; }
+  .coins-table .table-row {
+    min-height: auto;
+    height: auto;
+    padding: 15px; }
+  .coins-table .cell-date {
+    flex-basis: 26%;
+    line-height: 18px;
+    text-align: left; }
+  .coins-table .cell-desc {
+    flex-basis: 62%; }
+  .coins-table .cell-coins {
+    flex-basis: 12%;
+    text-align: left; }
+  .coins-table .inner-desc-content, .coins-table .inner-desc {
+    font-weight: normal; }
+  .header-nav-menu {
+    margin-right: 0; }
+  .table-body {
+    text-align: left; }
+    .table-body .table-row:nth-child(even) {
+      background-color: rgba(122, 169, 46, 0.2); }
+  .how-to-get-coins .heading {
+    font-size: 21px;
+    line-height: 31px; }
+  .table-row .inner {
+    font-size: 12px;
+    line-height: 18px; }
+  .personal-check .heading {
+    font-size: 28px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 30px; }
+  .table-container {
+    min-height: 361px; }
+  .personal-coins .table-container {
+    min-height: 415px; }
+  .personal-head {
+    margin-bottom: 32px; }
+    .personal-head .heading {
+      font-size: 28px;
+      line-height: 31px;
+      order: 2;
+      margin-top: 15px; }
+    .personal-head .btn {
+      order: 1; }
+  .personal-content-inner {
+    width: 100%; }
+  .reg-new-check {
+    display: block;
+    margin: 0 auto; }
+  .personal-prizes .prize-item {
+    width: 350px;
+    margin: 0 0 24px; } }
 
 @media (max-width: 800px) {
   .mobile-redline {
@@ -1523,11 +1809,29 @@ hr {
     margin: 17px auto 0;
     display: block; }
   .input-field {
-    width: 100%; } }
+    width: 100%; }
+  .personal-coins {
+    margin-bottom: 42px; }
+    .personal-coins .prize-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .personal-coins .prize-item {
+      width: 245px;
+      height: 180px;
+      margin: 0 0 24px; }
+  .prize-container {
+    margin-top: 30px; }
+  .how-to-get-coins .table-container {
+    min-height: 415px; }
+  .how-to-get-coins .prize-item .prize-price {
+    padding: 15px 0; } }
 
 @media (max-width: 450px) {
   .mobile-redline {
-    margin-bottom: -31px; } }
+    margin-bottom: -31px; }
+  .personal-prizes .prize-item {
+    width: 100%; } }
 
 .popup {
   position: fixed;

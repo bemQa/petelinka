@@ -51,7 +51,8 @@ $(document).ready(function () {
     });
 
     // example init scrollbar for tables
-    $('.table-wrapper').scrollbar();
+    // $('.table-wrapper').scrollbar();
+    $('.table-body').scrollbar();
 
     // init phone inputmask
     function maskInit() {
