@@ -1622,6 +1622,16 @@ hr {
 .popups-list-for-fun li {
   margin: 5px 0; }
 
+.enter-another-address {
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline; }
+
 @media (max-width: 1280px) {
   .header-brand {
     margin-left: 0; }
@@ -2056,7 +2066,9 @@ hr {
   .roll-prizes .prize-item:first-of-type() {
     margin-left: 0; }
   .roll-prizes .prize-item:last-of-type() {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .user-profile-link {
+    min-width: 270px; } }
 
 .popup {
   position: fixed;
@@ -2133,7 +2145,9 @@ hr {
 
 .popup-desc {
   text-align: center;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 20px; }
 
 .clock-text {
   text-align: center; }

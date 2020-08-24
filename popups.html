@@ -125,6 +125,10 @@
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="restore-password">Восстановление пароля</a></li>
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="reg-success">Регистрация пройдена</a></li>
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="new-same-club">Обновленный клуб - напоминание о восстановлении аккаунта</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="address-enter">Адрес - ввод</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="address-disabled">Адрес - подтверждение ввода</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="address-accepted">Адрес подтвержден - подарок отправлен</a></li>
+                    
                 </ul>
             </section>
         </div>
@@ -179,7 +183,8 @@
 			<div class="popup-wrap">
 				<a href="#!" class="close-popup js-close-popup">
 					<img src="img/icon-close-gray.svg">
-				</a>
+                </a>
+                
 				<div class="popup-inner">
 					<div class="popup-title">Регистрация</div>
 					<div class="popup-error">Ошибочная ошибка</div>
@@ -248,7 +253,8 @@
 			<div class="popup-wrap">
 				<a href="#!" class="close-popup js-close-popup">
 					<img src="img/icon-close-gray.svg">
-				</a>
+                </a>
+                
 				<div class="popup-inner">
 					<div class="popup-title">Вход в личный кабинет</div>
 					<div class="popup-error">Ошибочная ошибка</div>
@@ -279,7 +285,8 @@
 			<div class="popup-wrap">
 				<a href="#!" class="close-popup js-close-popup">
 					<img src="img/icon-close-gray.svg">
-				</a>
+                </a>
+                
 				<div class="popup-inner">
 					<div class="popup-title">Восстановление пароля</div>
 					<div class="popup-error">Ошибочная ошибка</div>
@@ -308,7 +315,8 @@
 			<div class="popup-wrap">
 				<a href="#!" class="close-popup js-close-popup">
 					<img src="img/icon-close-gray.svg">
-				</a>
+                </a>
+                
 				<div class="popup-inner">
 					<div class="popup-title">Регистрация пройдена</div>
 					<div class="popup-error">Ошибочная ошибка</div>
@@ -326,7 +334,8 @@
 			<div class="popup-wrap">
 				<a href="#!" class="close-popup js-close-popup">
 					<img src="img/icon-close-gray.svg">
-				</a>
+                </a>
+                
 				<div class="popup-inner">
 					<div class="popup-title">Встречайте обновленный клуб “Моя Петелинка”</div>
 					<div class="popup-error">Ошибочная ошибка</div>
@@ -338,7 +347,158 @@
                     </div>
 				</div>
 			</div>
-		</div>
+        </div>
+        
+        <div id="address-enter" class="popup ">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title">Адрес</div>
+                    <div class="popup-error">Ошибочная ошибка</div>
+                    <p class="popup-desc">Укажите почтовый адрес, для отправки приза:</p>
+	
+					<form class="popup-form" novalidate="novalidate">
+                        <div class="input-field">
+                            <div class="select">
+                                <select class="select-search" name="region" data-placeholder="Регион" required>
+                                    <!-- Empty option for placeholder -->
+                                    <option></option>
+                                    <!-- Empty option for placeholder END -->
+                                    <option value="1">Регион 1</option>
+                                    <option value="2">Регион 2</option>
+                                    <option value="3">Регион 3</option>
+                                    <option value="4">Регион 4</option>
+                                    <option value="5">Регион 5</option>
+                                    <option value="6">Регион 6</option>
+                                </select>
+                            </div>
+						</div>
+    
+                        <div class="input-field">
+                            <div class="select">
+                                <select class="select-search" name="city" data-placeholder="Город" required>
+                                    <!-- Empty option for placeholder -->
+                                    <option></option>
+                                    <!-- Empty option for placeholder END -->
+                                    <option value="1">Москва</option>
+                                    <option value="2">New York</option>
+                                    <option value="3">Казань</option>
+                                    <option value="4">Штормград</option>
+                                    <option value="5">Казахстан</option>
+                                    <option value="6">Placeholder city</option>
+                                </select>
+                            </div>
+						</div>		
+
+                        <div class="input-field">
+                            <div class="select">
+                                <select class="select-search" name="street" data-placeholder="Улица" required>
+                                    <!-- Empty option for placeholder -->
+                                    <option></option>
+                                    <!-- Empty option for placeholder END -->
+                                    <option value="1">Белая</option>
+                                    <option value="2">Красная</option>
+                                    <option value="3">Желтая</option>
+                                    <option value="4">Осуждаю</option>
+                                </select>
+                            </div>
+                        </div>	
+
+                        <div class="input-field">
+                            <div class="select">
+                                <select class="select-search" name="house" data-placeholder="Дом" required>
+                                    <!-- Empty option for placeholder -->
+                                    <option></option>
+                                    <!-- Empty option for placeholder END -->
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+						</div>			
+	
+                        <div class="input-field">
+							<input type="text" name="apartment" placeholder="Квартира">
+						</div>
+	
+						<div class="btn-wrap">
+							<button class="btn btn-green">отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+        </div>
+
+        <div id="address-disabled" class="popup ">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title">Подтвердите адрес</div>
+                    <div class="popup-error">Ошибочная ошибка</div>
+                    <p class="popup-desc">Подтвердите почтовый адрес, для отправки приза:</p>
+	
+					<form class="popup-form" novalidate="novalidate">
+                        <div class="input-field">
+                            <input type="text" name="region" placeholder="Регион" disabled value="Замкад">
+                        </div>
+                        
+                        <div class="input-field">
+                            <input type="text" name="city" placeholder="Город" disabled value="Сыктывкар">
+                        </div>
+                        
+                        <div class="input-field">
+                            <input type="text" name="street" placeholder="Улица" disabled value="Московская">
+                        </div>
+                        
+                        <div class="input-field">
+                            <input type="text" name="house" placeholder="Дом" disabled value="51">
+						</div>
+    	
+                        <div class="input-field">
+							<input type="text" name="apartment" placeholder="Квартира" disabled value="241">
+						</div>
+	
+						<div class="btn-wrap">
+							<button class="btn btn-green">Подтвердить</button>
+                        </div>
+                        
+                        <p><a href="#" class="enter-another-address">Указать другой адрес</a></p>
+					</form>
+				</div>
+			</div>
+        </div>
+        
+        <div id="address-accepted" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title">Ваш подарок отправлен</div>
+					<div class="popup-error">Ошибочная ошибка</div>
+					
+                    <p class="popup-desc">
+                        по адресу:<br>
+                        ул. Строителей, д. 25, кв. 66 г. Санкт-Петербург, Ленинградская область
+                    </p>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green js-close-popup">спасибо</button>
+                    </div>
+				</div>
+			</div>
+        </div>
+
 	</div>
 	<!-- Popups END  -->
 
