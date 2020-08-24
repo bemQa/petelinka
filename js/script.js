@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // maybe for future?
+    // let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
     // Init popups
     function OpenPopup(popupId) {
         $('body').removeClass('no-scrolling');
@@ -230,6 +233,20 @@ $(document).ready(function () {
     });
 
     /* Init sliders */
+    $('.prize-catalogue-slider').slick({
+        mobileFirst: true, 
+        arrows: false,
+        centerMode: true, 
+        autoplay: false,
+        swipeToSlide: true,
+        responsive: [
+            {
+                breakpoint: 650,
+                settings: "unslick" // because we need this only on mobiles
+            }
+        ]
+    });
+
     $('.main-slider').slick({
         dots: true,
         infinite: true,
@@ -237,7 +254,8 @@ $(document).ready(function () {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 9000,
-        swipeToSlide: true
+        swipeToSlide: true,
+        
     });
 
     $('.prize-slider').slick({
@@ -273,4 +291,18 @@ $(document).ready(function () {
         ]
     });
     /* Init sliders end */ 
+
+
+    /* Init countdown for prize rolls */
+    $('#countdown-init-hidden').countdown('2020/10/31')
+        .on('update.countdown', function(event){
+            $('.countdown-days').text(event.offset.totalDays);
+            $('.countdown-hours').text(event.offset.hours);
+            $('.countdown-sec').text(event.offset.seconds);
+        })
+        .on('finish.countdown', function(){
+            // what to do?
+        });
+    /* Init countdown for prize rolls END */
+
 });
