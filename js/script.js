@@ -280,7 +280,7 @@ $(document).ready(function () {
                 breakpoint: 850,
                 settings: {
                     arrows: false,
-                    slidesToShow: 4
+                    slidesToShow: 3
                 }
             },{            
                 breakpoint: 1260,

@@ -1030,7 +1030,7 @@ body {
     margin-bottom: 35px; }
 
 .prize-slider-outer {
-  background: url(../img/bg-wood.png) no-repeat;
+  background: url(../img/bg-gray-texture.png) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 52px 0; }
@@ -1486,7 +1486,7 @@ hr {
     width: 226px; }
     .roll-prizes .prize-item:first-of-type {
       margin-left: 0; }
-    .roll-prizes .prize-item:nth-last-of-type {
+    .roll-prizes .prize-item:last-of-type {
       margin-right: 0; }
   .roll-prizes .prize-name {
     height: 50px;
@@ -1592,7 +1592,25 @@ hr {
 
 .part-4 .possible-win {
   display: flex;
+  justify-content: space-between;
   margin: 50px 0; }
+  .part-4 .possible-win .prize-item {
+    height: auto;
+    flex-basis: 31%; }
+    .part-4 .possible-win .prize-item:first-of-type {
+      margin-left: 0; }
+    .part-4 .possible-win .prize-item:last-of-type {
+      margin-right: 0; }
+  .part-4 .possible-win .prize-content {
+    height: 184px;
+    background-size: cover;
+    background-position: center; }
+  .part-4 .possible-win .prize-footer {
+    height: 88px;
+    flex-direction: column; }
+  .part-4 .possible-win .prize-name, .part-4 .possible-win .prize-price {
+    margin: 0;
+    padding: 0; }
 
 .part-5 .link-to-rules {
   color: #AB2328;
@@ -1920,7 +1938,21 @@ hr {
     line-height: 54px; }
   .countdown-outer {
     padding-left: 46px;
-    padding-right: 46px; } }
+    padding-right: 46px; }
+  .possible-win {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .possible-win .prize-item {
+      margin: 0 0 32px; }
+      .possible-win .prize-item:last-of-type {
+        margin: 0; }
+  .prize-slider {
+    margin-bottom: 42px; }
+  .part-4 .possible-win .prize-item {
+    width: 100%; }
+  .part-4 .possible-win .prize-footer {
+    height: 67px; } }
 
 @media (max-width: 800px) {
   .mobile-redline {
@@ -2021,7 +2053,7 @@ hr {
   .roll-prizes .prize-item:first-of-type() {
     margin-left: 0; }
   .roll-prizes .prize-item:last-of-type() {
-    margin-right: 0px; } }
+    margin-right: 0; } }
 
 .popup {
   position: fixed;
