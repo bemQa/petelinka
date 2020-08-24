@@ -2138,3 +2138,10 @@ hr {
 .clock-text {
   text-align: center; }
 
+.popup-error {
+  color: #AB2328;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 18px;
+  line-height: 18px; }
+
