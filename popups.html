@@ -117,13 +117,18 @@
             </div>
         </header>
 
-        <section>
-            <ul>
-                <li><a href="#" class="btn btn-green btn-log pop-op" data-popup="log">Войти</a></li>
-                <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="reg">Зарегистрироваться</a></li>
-                <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="restore-password">Восстановление пароля</a></li>
-            </ul>
-        </section>
+        <div class="inner-container">
+            <section>
+                <ul class="popups-list-for-fun">
+                    <li><a href="#" class="btn btn-green btn-log pop-op" data-popup="log">Войти</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="reg">Зарегистрироваться</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="restore-password">Восстановление пароля</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="reg-success">Регистрация пройдена</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="new-same-club">Обновленный клуб - напоминание о восстановлении аккаунта</a></li>
+                </ul>
+            </section>
+        </div>
+
 	</section>
 
 	<footer class="main-footer">
@@ -295,6 +300,42 @@
 							<button class="btn btn-green">отправить</button>
 						</div>
 					</form>
+				</div>
+			</div>
+        </div>
+        
+        <div id="reg-success" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+				</a>
+				<div class="popup-inner">
+					<div class="popup-title">Регистрация пройдена</div>
+					<div class="popup-error"></div>
+	
+                    <p class="popup-desc">Пароль для входа отправлен Вам на почту, указанную при регистрации</p>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green js-close-popup">понятно</button>
+                    </div>
+				</div>
+			</div>
+        </div>
+        
+        <div id="new-same-club" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+				</a>
+				<div class="popup-inner">
+					<div class="popup-title">Встречайте обновленный клуб “Моя Петелинка”</div>
+					<div class="popup-error"></div>
+					
+                    <p class="popup-desc">Если вы ранее были зарегистрированы на нашем сайте, пожалуйста, восстановите пароль</p>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green">восстановить пароль</button>
+                    </div>
 				</div>
 			</div>
 		</div>
