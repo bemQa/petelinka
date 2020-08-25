@@ -56,6 +56,7 @@ $(document).ready(function () {
     // example init scrollbar for tables
     // $('.table-wrapper').scrollbar();
     $('.table-body').scrollbar();
+    $('.item-content').scrollbar();
 
     // init phone inputmask
     function maskInit() {
@@ -203,6 +204,15 @@ $(document).ready(function () {
           var $this = $(this);
           var $parent = $(this).parent();
           var content = $this.next();
+        
+          // fix for elements with custom scrollbar
+          if (content.hasClass('scroll-wrapper')){
+              let temp = content;
+              content = content.find('.scroll-content');
+
+              content = content.add(temp);
+              console.log(content);
+          }
 
           if (content.is(':visible')) {
             $this.removeClass('active');
@@ -213,7 +223,6 @@ $(document).ready(function () {
             $parent.addClass('active');
             content.slideDown('fast');
           }
-
         });
     }
     openAccordion();

@@ -501,7 +501,7 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
 .select2-results__option {
   font-size: 16px;
   line-height: 1;
-  height: 30px;
+  min-height: 30px;
   padding: 8px 20px 8px 15px; }
 
 .select2-container--default .select2-results__option[aria-selected=true],
@@ -2290,7 +2290,93 @@ hr {
     .possible-trades:last-of-type {
       margin-bottom: 0; }
   .trade-heading, .trade-rule {
-    width: 100%; } }
+    width: 100%; }
+  .mobile-special .heading {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    text-align: center;
+    color: #AB2328;
+    padding: 0 11px; }
+  .mobile-special p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px; }
+  .mobile-special .btn-viber {
+    font-size: 18px; }
+  .mobile-special .welcome-prize-list {
+    margin-top: 29px; }
+  .mobile-special .download-apps a:last-of-type {
+    margin-bottom: 0; }
+  .mobile-special .reg-in-whatsapp, .mobile-special .reg-in-app, .mobile-special .reg-on-site {
+    margin-bottom: 33px; }
+    .mobile-special .reg-in-whatsapp:last-of-type, .mobile-special .reg-in-app:last-of-type, .mobile-special .reg-on-site:last-of-type {
+      margin-bottom: 0; }
+  .mobile-special .reg-on-site {
+    margin-top: 25px; }
+  .mobile-special .how-to-reg-mobile {
+    padding: 30px 0; }
+  .mobile-special .welcome-prize {
+    padding: 80px 28px 47px;
+    background: url(../img/bg-gray-texture.png) no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .mobile-special .main-footer-contacts {
+    padding: 16px 0; }
+  .mobile-special .item {
+    padding: 20px;
+    margin-bottom: 13px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    background-color: #fff;
+    display: inline-block;
+    width: 100%; }
+    .mobile-special .item:last-of-type {
+      margin-bottom: 0; }
+    .mobile-special .item.active .arrow {
+      transform: rotate(360deg); }
+  .mobile-special .item-preview {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .mobile-special .item-preview p {
+      text-align: left; }
+    .mobile-special .item-preview .item-part {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .mobile-special .item-preview .item-part.text {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 70%; }
+    .mobile-special .item-preview .arrow {
+      transform: rotate(270deg);
+      transition: all .3s linear; }
+    .mobile-special .item-preview .prize-title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px; }
+    .mobile-special .item-preview .prize-desc {
+      font-size: 14px;
+      line-height: 18px; }
+    .mobile-special .item-preview .icon {
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      background-position: center; }
+  .mobile-special .item-content {
+    display: none;
+    max-height: 200px;
+    margin-top: 10px;
+    padding: 0 12px 0 22%;
+    min-height: 60px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: left;
+    color: #272727; }
+  .mobile-special .footer {
+    padding: 9px 0 15px; } }
 
 @media (max-width: 800px) {
   .mobile-redline {
@@ -2401,11 +2487,17 @@ hr {
     padding-right: 25px; }
   .trades-imgs .item {
     width: 90px;
-    height: 90px; } }
+    height: 90px; }
+  .mobile-special .item-content {
+    padding-left: 20%; } }
 
 @media (max-width: 330px) {
   .wide-chicken-help {
-    padding-top: 10px; } }
+    padding-top: 10px; }
+  .mobile-special .heading {
+    font-size: 24px; }
+  .mobile-special .item-content {
+    padding-left: 23%; } }
 
 @media (min-width: 1000px) {
   .roll-prizes .prize-item:first-of-type() {
@@ -2415,7 +2507,9 @@ hr {
   .user-profile-link {
     min-width: 270px; }
   .faq-wrap {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .mobile-special {
+    display: none !important; } }
 
 .popup {
   position: fixed;
