@@ -131,6 +131,10 @@ span.error {
 .personal-content-inner .select-year {
   flex-basis: 27%; }
 
+textarea {
+  min-height: 121px;
+  padding-top: 18px; }
+
 /* Normalize styles */
 html {
   line-height: 1.15;
@@ -619,6 +623,7 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
 
 /**/
 
+@charset "UTF-8";
 body {
   background-color: #fff;
   font-family: 'Circe', Arial, sans-serif;
@@ -1460,6 +1465,10 @@ hr {
   margin: 26px 0; }
   .level-container:first-of-type {
     margin-top: 32px; }
+  .level-container.no-coins .prize-content-inner img {
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
 
 .lvl-info {
   flex-basis: 33%;
@@ -1570,13 +1579,13 @@ hr {
   color: #fff;
   margin: 0 8px; }
 
-.roll-part {
+.roll-part, .rules-part {
   padding: 50px 9%; }
 
 .countdown-container {
   margin-bottom: 36px; }
 
-.part-2, .part-4 {
+.part-2, .part-4, .rule-2, .rule-4 {
   background: url(../img/bg-gray-texture.png) no-repeat;
   background-size: cover;
   background-position: center; }
@@ -1622,7 +1631,7 @@ hr {
 .popups-list-for-fun li {
   margin: 5px 0; }
 
-.enter-another-address {
+.popup-txt-supp, .enter-another-address, .decline-prize-txt, .try-again-txt {
   display: inline-block;
   width: 100%;
   margin-top: 15px;
@@ -1631,6 +1640,234 @@ hr {
   text-align: center;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline; }
+
+.decline-prize-txt, .try-again-txt {
+  font-variant: small-caps;
+  font-weight: bold; }
+
+.try-again-txt {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none; }
+  .try-again-txt img {
+    margin: 0 5px -3px; }
+
+.popup-prize-item {
+  margin-bottom: 20px; }
+  .popup-prize-item .prize-img {
+    padding: 0 40px; }
+    .popup-prize-item .prize-img img {
+      width: 100%;
+      height: auto; }
+
+.popup-prize-name {
+  font-size: 23px;
+  line-height: 35px;
+  font-weight: bold; }
+
+.popup .popup-prize-info {
+  text-align: left; }
+
+.prize-cost {
+  font-weight: bold; }
+
+.txt-mid {
+  text-align: center; }
+
+.enroll-pic {
+  width: 53px;
+  height: 53px;
+  border-radius: 35px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px; }
+
+.enroll-price-list .item {
+  padding: 7px 10px;
+  background-color: #FFB81C;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px; }
+  .enroll-price-list .item:last-of-type {
+    margin-bottom: 0; }
+
+.enroll-info {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px; }
+
+.txt-bold {
+  font-weight: bold; }
+
+.popup-inner .spend-coins {
+  font-size: 22px;
+  line-height: 24px;
+  margin: 30px 0; }
+
+.popup-inner .roll-results-announce {
+  margin: 30px 0; }
+
+.popup-winner-item {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 25px; }
+  .popup-winner-item .winner-footer {
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #C4C4C4;
+    padding: 7px 7%; }
+
+.prize-img {
+  font-size: 0;
+  line-height: 0; }
+
+.faq-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.faq-wrap {
+  flex-basis: 47%;
+  z-index: 20; }
+
+.feedback-wrap {
+  flex-basis: 45%; }
+
+.faq-content {
+  padding-top: 50px; }
+
+.faq-item-title {
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+  position: relative;
+  cursor: pointer; }
+  .faq-item-title::before {
+    content: '+';
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+    background: #FFB81C;
+    border-radius: 10px; }
+  .faq-item-title.active::before {
+    content: '–';
+    background-color: #C4C4C4; }
+
+.faq-item-text {
+  display: none;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 19px 0 0 40px; }
+
+.faq-item {
+  margin: 40px 0; }
+  .faq-item:first-of-type {
+    margin-top: 0; }
+  .faq-item:last-of-type {
+    margin-bottom: 0; }
+
+.feedback-wrap {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  background-color: #E5E5E5;
+  padding: 20px 43px; }
+
+.feedback-title {
+  color: #AB2328;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 38px;
+  text-align: center; }
+
+.feedback-desc {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 20px 0 37px;
+  text-align: center;
+  letter-spacing: -0.02em; }
+
+.relative {
+  position: relative; }
+
+.wide-chicken-help.mirror {
+  transform: scale(-1, 1);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2; }
+
+.rules-content .heading {
+  font-size: 40px;
+  line-height: 1;
+  text-align: center; }
+
+.step-name {
+  color: #AB2328;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center; }
+
+.step-desc {
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center; }
+
+.how-to-reg {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .how-to-reg .item {
+    padding: 0 45px; }
+    .how-to-reg .item img {
+      max-width: 100%; }
+  .how-to-reg .img-wrap {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.trades-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .trades-imgs .item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 101px;
+    height: 101px;
+    border-radius: 60px;
+    border: 1px solid #fff;
+    margin: 0 8px; }
+  .trades-imgs.small .item {
+    background-size: contain; }
+
+.coins-exchange {
+  display: flex;
+  flex-direction: row;
+  flex-direction: center;
+  margin-top: 45px; }
+
+.possible-trades {
+  flex-basis: 50%; }
 
 @media (max-width: 1280px) {
   .header-brand {
@@ -1965,7 +2202,39 @@ hr {
   .part-4 .possible-win .prize-item {
     width: 100%; }
   .part-4 .possible-win .prize-footer {
-    height: 67px; } }
+    height: 67px; }
+  .faq-content {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center; }
+  .faq-wrap {
+    margin-bottom: 45px; }
+  .faq-item-text {
+    padding-top: 16px; }
+  .faq-item {
+    margin: 25px 0; }
+  textarea {
+    min-height: 136px; }
+  .feedback-title {
+    font-size: 28px;
+    line-height: 31px; }
+  .feedback-desc {
+    margin-bottom: 32px; }
+  .wide-chicken-help.mirror {
+    position: relative;
+    background: url(../img/mrsChicken.png) no-repeat left bottom;
+    padding: 0;
+    background-size: contain;
+    margin-top: -100px; }
+  .how-to-reg {
+    flex-direction: column; }
+  .rules-content .heading {
+    font-size: 28px;
+    line-height: 31px; }
+  .coins-exchange {
+    flex-direction: column; } }
 
 @media (max-width: 800px) {
   .mobile-redline {
@@ -2033,7 +2302,9 @@ hr {
     margin-right: 10px; }
   .level-container {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .wide-chicken-help.mirror {
+    margin-top: 5px; } }
 
 @media (max-width: 450px) {
   .mobile-redline {
@@ -2048,7 +2319,10 @@ hr {
       line-height: 24px;
       text-align: center; }
   .main-content-header {
-    height: 170px; } }
+    height: 170px; }
+  .feedback-wrap {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 @media (max-width: 360px) {
   .level-container {
@@ -2068,7 +2342,9 @@ hr {
   .roll-prizes .prize-item:last-of-type() {
     margin-right: 0; }
   .user-profile-link {
-    min-width: 270px; } }
+    min-width: 270px; }
+  .faq-wrap {
+    margin-bottom: 50px; } }
 
 .popup {
   position: fixed;
@@ -2105,7 +2381,7 @@ hr {
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 30px 63px 39px; }
+  padding: 30px 61px 39px; }
 
 .popup-inner {
   max-width: 390px;

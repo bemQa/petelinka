@@ -128,7 +128,13 @@
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="address-enter">Адрес - ввод</a></li>
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="address-disabled">Адрес - подтверждение ввода</a></li>
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="address-accepted">Адрес подтвержден - подарок отправлен</a></li>
-                    
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="prize-try-more">Каталог призов - забрать/попробовать ещё</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="prize-decline">Каталог призов - забрать/отказаться</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="prize-details">Информация о призе</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="get-in-roll">Участвовать в розыгрыше - выбор уровня</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="get-in-roll-spend">Участвовать в розыгрыше - списание</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="get-in-roll-success">Участвовать в розыгрыше - успех</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="gratz">Выигранный приз розыгрыша</a></li>
                 </ul>
             </section>
         </div>
@@ -499,6 +505,188 @@
 			</div>
         </div>
 
+        <div id="prize-decline" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title">Вы выиграли!</div>
+					<div class="popup-error">Ошибочная ошибка</div>
+					
+                    <div class="popup-prize-item">
+                        <p class="popup-desc">Ваш приз:<br><span class="popup-prize-name">Щипцы</span></p>
+
+                        <div class="prize-img">
+                            <img src="img/real-prize-shipci.png">
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green">забрать</button>
+                    </div>
+
+                    <a href="#" class="decline-prize-txt">отказаться и продолжить копить</a>
+				</div>
+			</div>
+        </div>
+
+        <div id="prize-try-more" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title">Вы выиграли!</div>
+					<div class="popup-error">Ошибочная ошибка</div>
+					
+                    <div class="popup-prize-item">
+                        <p class="popup-desc">Ваш приз:<br><span class="popup-prize-name">Коробка для филешки</span></p>
+
+                        <div class="prize-img">
+                            <img src="img/real-prize-lanchbox.png">
+                        </div>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green">забрать</button>
+                    </div>
+
+                    <a href="#" class="try-again-txt"><img src="img/icon-repeat.svg" alt=""> попробовать ещё раз</a>
+				</div>
+			</div>
+        </div>
+
+        <div id="prize-details" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+                    <div class="popup-error">Ошибочная ошибка</div>
+					
+                    <div class="popup-prize-item">
+                        <p class="popup-prize-name txt-mid">Шмат сала</p>
+
+                        <div class="prize-img">
+                            <img src="img/real-prize-lanchbox.png">
+                        </div>
+
+                        <p class="popup-desc popup-prize-info">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="popup-desc prize-cost">Стоимость: 300 баллов</p>
+                    </div>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green js-close-popup">закрыть</button>
+                    </div>
+				</div>
+			</div>
+        </div>
+
+        <div id="get-in-roll" class="popup get-in-roll">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+                    <div class="popup-title">Участвовать в розыгрыше</div>
+                    <div class="popup-error">Ошибочная ошибка</div>
+                    
+                    <p class="popup-desc">Выберите приз, на который хотите поставить баллы:</p>
+
+                    <div class="enroll-price-list">
+                        <a class="item">
+                            <div class="enroll-pic" style="background-image: url(img/prize-big-posuda-set.png)"></div>
+                            <p class="enroll-info">Розыгрыш 1 уровня за 350</p>
+                        </a>
+
+                        <a class="item">
+                            <div class="enroll-pic" style="background-image: url(img/prize-big-devices.png)"></div>
+                            <p class="enroll-info">Розыгрыш 2 уровня за 700</p>
+                        </a>
+
+                        <a class="item">
+                            <div class="enroll-pic" style="background-image: url(img/prize-big-kichen.png)"></div>
+                            <p class="enroll-info">Розыгрыш 3 уровня за 1000</p>
+                        </a>
+                    </div>
+				</div>
+			</div>
+        </div>
+
+        <div id="get-in-roll-spend" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+                    <div class="popup-title">Участвовать в розыгрыше</div>
+                    <div class="popup-error">Ошибочная ошибка</div>
+                    
+                    <p class="popup-desc">Для участия в розыгрыше потребуется списание <span class="txt-bold">350 баллов</span>.</p>
+                    <p class="popup-desc spend-coins">Вы подтверждаете списание?</p>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green">списать баллы</button>
+                    </div>
+				</div>
+			</div>
+        </div>
+
+        <div id="get-in-roll-success" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+                    <div class="popup-title">Вы учавствуете в розыгрыше</div>
+                    <div class="popup-error">Ошибочная ошибка</div>
+                    
+                    <p class="popup-desc roll-results-announce">В день розыгрыша вы получите уведомление о его результатах.</p>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green">продолжить</button>
+                    </div>
+				</div>
+			</div>
+        </div>
+
+        <div id="gratz" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title">Поздравляем!</div>
+					<div class="popup-error">Ошибочная ошибка</div>
+                    
+                    <p class="popup-desc">Вы учавствовали в розыгрыше и выиграли приз:</p>
+                    <div class="popup-winner-item">
+                        <div class="prize-img">
+                            <img src="img/prize-big-posuda-set.png">
+                        </div>
+                        <div class="winner-footer">
+                            <p>Один из 15-ти наборов коллекционной посуды GipFel</p>
+                        </div>
+                    </div>
+
+                    <p class="popup-desc">Вы можете забрать его прямо сейчас</p>
+                    <div class="btn-wrap">
+                        <button class="btn btn-green">забрать</button>
+                    </div>
+
+				</div>
+			</div>
+        </div>
 	</div>
 	<!-- Popups END  -->
 
