@@ -1522,6 +1522,24 @@ hr {
   .wide-chicken-help p {
     font-size: 18px;
     line-height: 27px; }
+  .wide-chicken-help.mirror {
+    transform: scale(-1, 1);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2; }
+  .wide-chicken-help.rules {
+    position: relative;
+    margin-top: -40px;
+    min-height: 260px;
+    padding: 105px 0 0 200px;
+    /* we rotating it, so padding works not as normal */ }
+    .wide-chicken-help.rules p {
+      transform: scale(-1, 1);
+      font-size: 16px;
+      line-height: 24px;
+      text-align: left; }
 
 .boxes-v2 {
   background-image: url(../img/bg-special-prize-boxes.png);
@@ -1803,14 +1821,6 @@ hr {
 .relative {
   position: relative; }
 
-.wide-chicken-help.mirror {
-  transform: scale(-1, 1);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 2; }
-
 .rules-content .heading {
   font-size: 40px;
   line-height: 1;
@@ -1846,7 +1856,8 @@ hr {
 .trades-imgs {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 32px; }
   .trades-imgs .item {
     background-size: cover;
     background-position: center;
@@ -1863,11 +1874,39 @@ hr {
 .coins-exchange {
   display: flex;
   flex-direction: row;
-  flex-direction: center;
+  align-items: center;
   margin-top: 45px; }
 
 .possible-trades {
   flex-basis: 50%; }
+
+.trades-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.trade-rule {
+  margin-bottom: 32px; }
+
+.trade-heading {
+  color: #AB2328;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px; }
+
+.item-domovenok {
+  border: 1px solid #C4C4C4 !important; }
+
+.trade-heading, .trade-rule {
+  width: 55%;
+  text-align: center; }
+
+.item-chicken {
+  min-height: 110px;
+  border-radius: 0 !important;
+  width: 100% !important;
+  background-size: contain !important; }
 
 @media (max-width: 1280px) {
   .header-brand {
@@ -1881,7 +1920,9 @@ hr {
     justify-content: space-between; }
   .level-container {
     margin-left: 20px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
+  .wide-chicken-help.rules {
+    padding: 70px 0 0 220px; } }
 
 @media (max-width: 1000px) {
   .main-container {
@@ -2228,19 +2269,40 @@ hr {
     padding: 0;
     background-size: contain;
     margin-top: -100px; }
+  .wide-chicken-help.rules {
+    background: url(../img/mrsChicken-halfdead.png) no-repeat left bottom;
+    margin-top: 0;
+    padding: 42px 20px; }
   .how-to-reg {
     flex-direction: column; }
+    .how-to-reg .item {
+      margin-bottom: 20px; }
+      .how-to-reg .item:last-of-type {
+        margin-bottom: 0; }
   .rules-content .heading {
     font-size: 28px;
     line-height: 31px; }
   .coins-exchange {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .possible-trades {
+    margin-bottom: 45px;
+    width: 60%; }
+    .possible-trades:last-of-type {
+      margin-bottom: 0; }
+  .trade-heading, .trade-rule {
+    width: 100%; } }
 
 @media (max-width: 800px) {
   .mobile-redline {
     margin-bottom: -45px; }
   .wide-chicken-help {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  .possible-trades {
+    width: 100%; }
+  .trades-imgs {
+    justify-content: space-between; }
+    .trades-imgs .item {
+      margin: 0; } }
 
 @media (max-width: 700px) {
   .wide-chicken-help {
@@ -2313,7 +2375,8 @@ hr {
     width: 100%; }
   .wide-chicken-help {
     background: url(../img/mrsChicken-halfdead.png) no-repeat left bottom;
-    padding: 20px 30px 0; }
+    padding: 20px 30px 0;
+    height: auto; }
     .wide-chicken-help p {
       font-size: 16px;
       line-height: 24px;
@@ -2322,7 +2385,12 @@ hr {
     height: 170px; }
   .feedback-wrap {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  .how-to-reg {
+    margin-top: 20px; }
+  .rules-part {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media (max-width: 360px) {
   .level-container {
@@ -2330,7 +2398,10 @@ hr {
     margin-right: 10px; }
   .countdown-outer {
     padding-left: 25px;
-    padding-right: 25px; } }
+    padding-right: 25px; }
+  .trades-imgs .item {
+    width: 90px;
+    height: 90px; } }
 
 @media (max-width: 330px) {
   .wide-chicken-help {
