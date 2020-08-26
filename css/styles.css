@@ -1417,15 +1417,11 @@ hr {
 .prize-item.success .prize-footer {
   background-color: #7AA92E; }
 
-.prize-item.nego {
-  pointer-events: none; }
-  .prize-item.nego .prize-footer {
-    background-color: #C4C4C4; }
+.prize-item.nego .prize-footer {
+  background-color: #C4C4C4; }
 
-.prize-item.default {
-  pointer-events: none; }
-  .prize-item.default .prize-footer {
-    background-color: #FFB81C; }
+.prize-item.default .prize-footer {
+  background-color: #FFB81C; }
 
 .personal-prizes {
   margin-bottom: 65px; }
