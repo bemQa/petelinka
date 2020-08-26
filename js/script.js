@@ -211,7 +211,6 @@ $(document).ready(function () {
               content = content.find('.scroll-content');
 
               content = content.add(temp);
-              console.log(content);
           }
 
           if (content.is(':visible')) {

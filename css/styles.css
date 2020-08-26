@@ -1908,6 +1908,85 @@ hr {
   width: 100% !important;
   background-size: contain !important; }
 
+.prize-brand-item {
+  padding: 20px;
+  margin-bottom: 13px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  background-color: #fff;
+  display: inline-block;
+  width: 100%; }
+  .prize-brand-item .item-preview {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .prize-brand-item .item-preview p {
+      text-align: left; }
+    .prize-brand-item .item-preview .item-part {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .prize-brand-item .item-preview .item-part.text {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 70%;
+        position: absolute;
+        padding: 7px 0 0 65px; }
+    .prize-brand-item .item-preview .arrow {
+      transform: rotate(270deg);
+      transition: all .3s linear; }
+    .prize-brand-item .item-preview .prize-title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px; }
+    .prize-brand-item .item-preview .prize-desc {
+      font-size: 14px;
+      line-height: 18px; }
+    .prize-brand-item .item-preview .icon {
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      background-position: center; }
+  .prize-brand-item .item-content {
+    display: none;
+    padding: 0 12px 0 65px;
+    height: 200px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    color: #272727; }
+  .prize-brand-item:last-of-type {
+    margin-bottom: 0; }
+  .prize-brand-item.active .arrow {
+    transform: rotate(360deg); }
+
+.first-check-heading {
+  line-height: 26px !important;
+  text-transform: none !important;
+  margin-bottom: 15px; }
+
+.prize-decorate {
+  font-weight: bold; }
+
+.small-info {
+  color: #C4C4C4;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center; }
+
+.popup-prize-brand-wrap {
+  margin-bottom: 20px; }
+
+.btn.take-prize {
+  display: none;
+  margin-top: 17px;
+  width: 150px !important;
+  height: 41px !important; }
+
+.active .btn.take-prize {
+  display: inline-block; }
+
 @media (max-width: 1280px) {
   .header-brand {
     margin-left: 0; }
@@ -2319,62 +2398,9 @@ hr {
   .mobile-special .welcome-prize {
     padding: 80px 28px 47px;
     background: url(../img/bg-gray-texture.png) no-repeat;
-    background-size: cover;
-    background-position: center; }
+    background-size: auto; }
   .mobile-special .main-footer-contacts {
     padding: 16px 0; }
-  .mobile-special .item {
-    padding: 20px;
-    margin-bottom: 13px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
-    border-radius: 12px;
-    background-color: #fff;
-    display: inline-block;
-    width: 100%; }
-    .mobile-special .item:last-of-type {
-      margin-bottom: 0; }
-    .mobile-special .item.active .arrow {
-      transform: rotate(360deg); }
-  .mobile-special .item-preview {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; }
-    .mobile-special .item-preview p {
-      text-align: left; }
-    .mobile-special .item-preview .item-part {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .mobile-special .item-preview .item-part.text {
-        flex-direction: column;
-        align-items: flex-start;
-        flex-basis: 70%; }
-    .mobile-special .item-preview .arrow {
-      transform: rotate(270deg);
-      transition: all .3s linear; }
-    .mobile-special .item-preview .prize-title {
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 18px; }
-    .mobile-special .item-preview .prize-desc {
-      font-size: 14px;
-      line-height: 18px; }
-    .mobile-special .item-preview .icon {
-      width: 50px;
-      height: 50px;
-      background-size: cover;
-      background-position: center; }
-  .mobile-special .item-content {
-    display: none;
-    max-height: 200px;
-    margin-top: 10px;
-    padding: 0 12px 0 22%;
-    min-height: 60px;
-    width: 100%;
-    font-size: 13px;
-    line-height: 16px;
-    text-align: left;
-    color: #272727; }
   .mobile-special .footer {
     padding: 9px 0 15px; } }
 
@@ -2487,17 +2513,13 @@ hr {
     padding-right: 25px; }
   .trades-imgs .item {
     width: 90px;
-    height: 90px; }
-  .mobile-special .item-content {
-    padding-left: 20%; } }
+    height: 90px; } }
 
 @media (max-width: 330px) {
   .wide-chicken-help {
     padding-top: 10px; }
   .mobile-special .heading {
-    font-size: 24px; }
-  .mobile-special .item-content {
-    padding-left: 23%; } }
+    font-size: 24px; } }
 
 @media (min-width: 1000px) {
   .roll-prizes .prize-item:first-of-type() {

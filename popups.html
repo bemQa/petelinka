@@ -135,6 +135,9 @@
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="get-in-roll-spend">Участвовать в розыгрыше - списание</a></li>
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="get-in-roll-success">Участвовать в розыгрыше - успех</a></li>
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="gratz">Выигранный приз розыгрыша</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="check-declined">Чек отклонен</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="select-welcome-prize">Выбрать приз за первый чек</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="frame-test">iframe для тестов</a></li>
                 </ul>
             </section>
         </div>
@@ -685,6 +688,142 @@
                         <button class="btn btn-green">забрать</button>
                     </div>
 
+				</div>
+			</div>
+        </div>
+
+        <div id="select-welcome-prize" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title first-check-heading">Выберите ваш подарок за первый загруженный чек!</div>
+
+                    <p class="popup-desc">Вам необходимо выбрать один из подарков:</p>
+                    <div class="accordion-wrap popup-prize-brand-wrap">
+                        <div class="prize-brand-item">
+                            <div class="item-preview accordion-title">
+                                <div class="item-part">
+                                    <div class="icon" style="background-image: url(img/brand-domovenok.png);"></div>
+                                </div>
+            
+                                <div class="item-part text">
+                                    <p class="prize-title">Домовёнок</p>
+                                    <p class="prize-desc">сертификат на 500 ₽</p>
+                                </div>
+            
+                                <div class="item-part">
+                                    <img src="/img/arrow-down-green.svg" class="arrow">
+                                </div>
+                            </div>
+        
+                            <div class="item-content">
+                                При выборе этого подарка вы получите код на следующие скидки: <span class="prize-decorate">Скидку в 20%!</span><br><br>
+                                <span class="prize-decorate">Скидка 20%</span> на первый заказ на все услуги, кроме генеральной уборки и уборки после ремонта.<br>
+                                В случае комплексного заказа скидка действует на самую дорогую услугу в чеке.<br><br>
+                                Предложение не распространяется на контракты с постоянным графиком обслуживания: для постоянных клиентов действует программа лояльности.<br>
+                                Предложение актуально до 31.12.2020 года и действует по Москве, Санкт-Петербургу и Нижнему Новгороду.
+                            </div>
+
+                            <div class="btn-wrap">
+                                <button class="btn btn-green take-prize">забрать</button>
+                            </div>
+                        </div>
+        
+                        <div class="prize-brand-item">
+                            <div class="item-preview accordion-title">
+                                <div class="item-part">
+                                    <div class="icon" style="background-image: url(img/brand-levelone.png);"></div>
+                                </div>
+            
+                                <div class="item-part text">
+                                    <p class="prize-title">Level One</p>
+                                    <p class="prize-desc">Скидка 30%</p>
+                                </div>
+            
+                                <div class="item-part">
+                                    <img src="/img/arrow-down-green.svg" class="arrow">
+                                </div>
+                            </div>
+        
+                            <div class="item-content">
+                                При выборе этого подарка вы получите код на следующие скидки:<br>
+                                <span class="prize-decorate">30% на заказ</span> в образовательном проекте Level One!<br><br>
+                                Level One — проект, который помогает быстро разобраться в разных направлениях культуры и науки, от искусства и астрономии до истории и практикумов по стилю. Слушайте вебинары с вдохновляющими рассказчиками, проходите онлайн-практикумы от лучших экспертов и присоединяйтесь к сообществам по интересам.<br><br>
+                                • Промокод применяется к полной стоимости лекций, вебинаров, онлайн-практикумов (без учета возможных автоматических скидок на сайте)<br>
+                                • Срок действия промокода до 31.12.2020<br>
+                            </div>
+
+                            <div class="btn-wrap">
+                                <button class="btn btn-green take-prize">забрать</button>
+                            </div>
+                        </div>
+        
+                        <div class="prize-brand-item">
+                            <div class="item-preview accordion-title">
+                                <div class="item-part">
+                                    <div class="icon" style="background-image: url(img/brand-litres.png);"></div>
+                                </div>
+            
+                                <div class="item-part text">
+                                    <p class="prize-title">ЛитРес</p>
+                                    <p class="prize-desc">книги и скидки до 30%</p>
+                                </div>
+            
+                                <div class="item-part">
+                                    <img src="/img/arrow-down-green.svg" class="arrow">
+                                </div>
+                            </div>
+        
+                            <div class="item-content">
+                                <!-- Place your content here -->
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            </div>
+
+                            <div class="btn-wrap">
+                                <button class="btn btn-green take-prize">забрать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="small-info">После выбора твой подарок будет находиться в Личном кабинете в разделе “Призы”.</p>
+				</div>
+			</div>
+        </div>
+
+        <div id="check-declined" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title">чек отклонен</div>
+
+                    <p class="popup-desc">Этот чек уже был загружен ранее.<br>Один чек можно загружать только один раз.</p>
+
+                    <div class="btn-wrap">
+                        <button class="btn btn-green js-close-popup">понятно</button>
+                    </div>
+				</div>
+			</div>
+        </div>
+        
+        <div id="frame-test" class="popup">
+			<div class="popup-wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<img src="img/icon-close-gray.svg">
+                </a>
+                
+				<div class="popup-inner">
+					<div class="popup-title">Зарегистрировать чек</div>
+                    <div class="popup-error">Ошибочная ошибка</div>
+                    
+                    <div class="iframe-wrap">
+                        <iframe src="https://checkservice.emg.ru/Upload?id=0eea1b94-954b-4b10-a4c7-60a3dc2238c6&participantId=8&hash=9750e026ea434dc07a15c86a0559459c" class="iframe" frameborder="0"></iframe>
+                    </div>
 				</div>
 			</div>
         </div>
