@@ -281,7 +281,7 @@ $(document).ready(function () {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '70px',
                     slidesToShow: 1
                 }
             },{            
@@ -290,6 +290,13 @@ $(document).ready(function () {
                     arrows: false,
                     slidesToShow: 3
                 }
+            },{            
+                breakpoint: 1000,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 5
+                }
+            },{  
             },{            
                 breakpoint: 1260,
                 settings: {
