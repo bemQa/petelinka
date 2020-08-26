@@ -1,59 +1,59 @@
 @font-face {
     font-family: 'Circe';
-    src: url('Circe-Light.eot');
-    src: url('Circe-Light.eot?#iefix') format('embedded-opentype'),
-        url('Circe-Light.woff2') format('woff2'),
-        url('Circe-Light.woff') format('woff');
+    src: url('https://promo.petelinka.ru/fonts/Circe-Light.eot');
+    src: url('https://promo.petelinka.ru/fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://promo.petelinka.ru/fonts/Circe-Light.woff2') format('woff2'),
+        url('https://promo.petelinka.ru/fonts/Circe-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Circe';
-    src: url('Circe-Regular.eot');
-    src: url('Circe-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Circe-Regular.woff2') format('woff2'),
-        url('Circe-Regular.woff') format('woff');
+    src: url('https://promo.petelinka.ru/fonts/Circe-Regular.eot');
+    src: url('https://promo.petelinka.ru/fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://promo.petelinka.ru/fonts/Circe-Regular.woff2') format('woff2'),
+        url('https://promo.petelinka.ru/fonts/Circe-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Circe';
-    src: url('Circe-Bold.eot');
-    src: url('Circe-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Circe-Bold.woff2') format('woff2'),
-        url('Circe-Bold.woff') format('woff');
+    src: url('https://promo.petelinka.ru/fonts/Circe-Bold.eot');
+    src: url('https://promo.petelinka.ru/fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://promo.petelinka.ru/fonts/Circe-Bold.woff2') format('woff2'),
+        url('https://promo.petelinka.ru/fonts/Circe-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Circe';
-    src: url('Circe-ExtraLight.eot');
-    src: url('Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('Circe-ExtraLight.woff2') format('woff2'),
-        url('Circe-ExtraLight.woff') format('woff');
+    src: url('https://promo.petelinka.ru/fonts/Circe-ExtraLight.eot');
+    src: url('https://promo.petelinka.ru/fonts/Circe-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('https://promo.petelinka.ru/fonts/Circe-ExtraLight.woff2') format('woff2'),
+        url('https://promo.petelinka.ru/fonts/Circe-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Circe';
-    src: url('Circe-ExtraBold.eot');
-    src: url('Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('Circe-ExtraBold.woff2') format('woff2'),
-        url('Circe-ExtraBold.woff') format('woff');
+    src: url('https://promo.petelinka.ru/fonts/Circe-ExtraBold.eot');
+    src: url('https://promo.petelinka.ru/fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://promo.petelinka.ru/fonts/Circe-ExtraBold.woff2') format('woff2'),
+        url('https://promo.petelinka.ru/fonts/Circe-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Circe';
-    src: url('Circe-Thin.eot');
-    src: url('Circe-Thin.eot?#iefix') format('embedded-opentype'),
-        url('Circe-Thin.woff2') format('woff2'),
-        url('Circe-Thin.woff') format('woff');
+    src: url('https://promo.petelinka.ru/fonts/Circe-Thin.eot');
+    src: url('https://promo.petelinka.ru/fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://promo.petelinka.ru/fonts/Circe-Thin.woff2') format('woff2'),
+        url('https://promo.petelinka.ru/fonts/Circe-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }

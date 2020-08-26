@@ -1385,37 +1385,34 @@ hr {
 .personal-head {
   margin-bottom: 15px; }
 
-.choose-prize .prize-item {
-  width: 30%;
-  height: 366px; }
-  .choose-prize .prize-item:first-of-type {
-    margin-left: 0; }
-  .choose-prize .prize-item:last-of-type {
-    margin-right: 0; }
-  .choose-prize .prize-item:nth-child(3n+1) {
-    margin-left: 0; }
-
-.choose-prize .prize-status {
-  width: 100%;
-  text-align: center; }
-
-.choose-prize .prize-content {
-  height: 302px; }
-
-.choose-prize .prize-footer {
-  height: 64px; }
-
-.choose-prize .prize-price {
-  margin: 20px 0 25px; }
-
-.choose-prize .date-label {
-  color: #666666; }
-
-.choose-prize .date-value {
-  font-weight: bold; }
-
-.choose-prize .prize-cont-combo {
-  padding-top: 13px; }
+.choose-prize {
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .choose-prize .prize-item {
+    width: 30%;
+    height: 366px;
+    margin-bottom: 15px; }
+    .choose-prize .prize-item:first-of-type {
+      margin-left: 0; }
+    .choose-prize .prize-item:nth-child(3n+1) {
+      margin-left: 0; }
+    .choose-prize .prize-item:nth-child(3n) {
+      margin-right: 0; }
+  .choose-prize .prize-status {
+    width: 100%;
+    text-align: center; }
+  .choose-prize .prize-content {
+    height: 302px; }
+  .choose-prize .prize-footer {
+    height: 64px; }
+  .choose-prize .prize-price {
+    margin: 20px 0 25px; }
+  .choose-prize .date-label {
+    color: #666666; }
+  .choose-prize .date-value {
+    font-weight: bold; }
+  .choose-prize .prize-cont-combo {
+    padding-top: 13px; }
 
 .prize-item.success .prize-footer {
   background-color: #7AA92E; }
@@ -1987,6 +1984,11 @@ hr {
 .active .btn.take-prize {
   display: inline-block; }
 
+.fake {
+  box-shadow: none;
+  height: 1px !important;
+  pointer-events: none; }
+
 @media (max-width: 1280px) {
   .header-brand {
     margin-left: 0; }
@@ -2487,8 +2489,7 @@ hr {
     width: 100%; }
   .wide-chicken-help {
     background: url(../img/mrsChicken-halfdead.png) no-repeat left bottom;
-    padding: 20px 30px 0;
-    height: auto; }
+    padding: 20px 30px 0; }
     .wide-chicken-help p {
       font-size: 16px;
       line-height: 24px;
