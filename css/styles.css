@@ -2179,7 +2179,8 @@ hr {
     right: 10px; }
   .main-content-header {
     height: 375px;
-    background-position: center; }
+    background-position: center;
+    background-image: url(../img/bg-prize-boxes-mobile.png); }
     .main-content-header .heading {
       text-align: center;
       font-size: 28px;
@@ -2415,7 +2416,9 @@ hr {
   .mobile-special .main-footer-contacts {
     padding: 16px 0; }
   .mobile-special .footer {
-    padding: 9px 0 15px; } }
+    padding: 9px 0 15px; }
+  .boxes-v2 {
+    background-image: url(../img/bg-special-prize-boxes-mobile.png); } }
 
 @media (max-width: 800px) {
   .mobile-redline {
