@@ -1224,8 +1224,8 @@ body {
   align-items: flex-start; }
 
 .user-profile-pic {
-  width: 144px;
-  height: 144px; }
+  width: 110x;
+  height: 110px; }
 
 .personal-content-inner {
   margin-top: 25px;
@@ -2016,8 +2016,8 @@ hr {
 
 .status-itself {
   font-weight: bold;
-  font-size: 21px;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 22px;
   font-variant: small-caps;
   color: #AB2328; }
 
