@@ -57,6 +57,7 @@ $(document).ready(function () {
     // $('.table-wrapper').scrollbar();
     $('.table-body').scrollbar();
     $('.item-content').scrollbar();
+    $('.winners-list-inner').scrollbar();
 
     // init phone inputmask
     function maskInit() {

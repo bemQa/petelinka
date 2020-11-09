@@ -1071,6 +1071,20 @@ body {
     font-size: 18px;
     padding: 15px 45px;
     font-variant: small-caps; }
+  .btn.prize-btn {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 13px 11px;
+    font-variant: small-caps;
+    width: 165px;
+    height: auto; }
+  .btn.btn-info {
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 9px; }
   .btn.curse {
     font-variant: small-caps; }
   .btn:disabled, .btn[disabled], .btn.disabled {
@@ -1467,7 +1481,8 @@ body {
   border-radius: 10px;
   margin: 4px 7px;
   height: 289px;
-  overflow: hidden; }
+  overflow: hidden;
+  outline: none; }
 
 .prize-name, .prize-price {
   text-align: center;
@@ -1796,34 +1811,67 @@ hr {
 .personal-head {
   margin-bottom: 15px; }
 
-.choose-prize {
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .choose-prize .prize-item {
-    width: 30%;
-    height: 366px;
-    margin-bottom: 15px; }
-    .choose-prize .prize-item:first-of-type {
-      margin-left: 0; }
-    .choose-prize .prize-item:nth-child(3n+1) {
-      margin-left: 0; }
-    .choose-prize .prize-item:nth-child(3n) {
-      margin-right: 0; }
-  .choose-prize .prize-status {
-    width: 100%;
+.choose-prize .prize-row {
+  width: 100%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin-bottom: 15px; }
+  .choose-prize .prize-row:nth-last-child {
+    margin-bottom: 0; }
+
+.choose-prize .labels-row, .choose-prize .content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .choose-prize .labels-row p, .choose-prize .content-row p {
     text-align: center; }
-  .choose-prize .prize-content {
-    height: 302px; }
-  .choose-prize .prize-footer {
-    height: 64px; }
-  .choose-prize .prize-price {
-    margin: 20px 0 25px; }
-  .choose-prize .date-label {
-    color: #666666; }
-  .choose-prize .date-value {
-    font-weight: bold; }
-  .choose-prize .prize-cont-combo {
-    padding-top: 13px; }
+
+.choose-prize .labels-row {
+  margin-bottom: 10px; }
+  .choose-prize .labels-row p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4; }
+
+.choose-prize .content-row p {
+  font-weight: bold; }
+
+.choose-prize .photo-col {
+  flex-basis: 18%; }
+
+.choose-prize .name-col {
+  flex-basis: 18%; }
+
+.choose-prize .coins-col {
+  flex-basis: 18%; }
+
+.choose-prize .date-col {
+  flex-basis: 12%; }
+
+.choose-prize .status-col {
+  flex-basis: 28%; }
+
+.choose-prize .prize-row-photo {
+  height: 90px;
+  overflow: hidden; }
+
+.choose-prize .status-pending, .choose-prize .status-sended, .choose-prize .status-received {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  font-variant: small-caps;
+  cursor: default; }
+
+.choose-prize .status-received {
+  color: #7AA92E; }
+
+.choose-prize .status-sended {
+  color: #AB2328; }
+
+.choose-prize .status-pending {
+  color: #8A8A8A; }
 
 .prize-item.success .prize-footer {
   background-color: #7AA92E; }
@@ -2508,6 +2556,119 @@ hr {
 .reupload .upload-photo {
   display: none; }
 
+.winners-chicken {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20%; }
+  .winners-chicken p {
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    margin: 50px 0 30px; }
+
+.enroll-btn {
+  width: auto !important; }
+
+.winners-header {
+  background-image: url(../img/bg-boxes-v3.jpg);
+  background-position: center; }
+
+.tier-1 {
+  margin-top: 35px; }
+
+.winners {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  height: 262px;
+  margin-bottom: 30px; }
+  .winners:nth-last-child {
+    margin-bottom: 0; }
+  .winners .prize {
+    flex-basis: 54%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFB81C;
+    line-height: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .winners .prize-photo {
+    flex-basis: 55%;
+    height: 100%; }
+    .winners .prize-photo img {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+  .winners .prize-desc {
+    flex-basis: 45%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 100%;
+    padding-left: 29px;
+    display: flex;
+    flex-direction: column; }
+    .winners .prize-desc p {
+      padding: 0;
+      margin: 0;
+      text-align: left; }
+  .winners .prize-name-outer {
+    height: 154px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px; }
+  .winners .prize-name {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 33px; }
+  .winners .prize-price {
+    font-size: 25px;
+    line-height: 18px;
+    font-weight: normal; }
+  .winners .winners-list {
+    flex-basis: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px 10px; }
+    .winners .winners-list p {
+      font-size: 22px;
+      line-height: 15px;
+      font-variant: small-caps;
+      margin-bottom: 15px; }
+    .winners .winners-list li {
+      font-size: 25px;
+      line-height: 38px; }
+  .winners .winners-list-inner {
+    width: 100%;
+    text-align: center; }
+
+.small-icon {
+  width: 22px;
+  height: 22px; }
+
+.prize-summ-label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 13px;
+  width: 60px; }
+
+.prize-summ-count {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 32px;
+  margin-right: 8px; }
+
+.prize-summ-sep {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 18px;
+  padding-bottom: 3px;
+  margin-right: 8px; }
+
 @media (max-width: 1280px) {
   .header-brand {
     margin-left: 0; }
@@ -2522,7 +2683,10 @@ hr {
     margin-left: 20px;
     margin-right: 20px; }
   .wide-chicken-help.rules {
-    padding: 85px 0 0 220px; } }
+    padding: 85px 0 0 220px; }
+  .winners .winners-list li {
+    font-size: 23px;
+    line-height: 31px; } }
 
 @media (max-width: 1000px) {
   .main-container {
@@ -2926,7 +3090,41 @@ hr {
   .mobile-special .footer {
     padding: 9px 0 15px; }
   .boxes-v2 {
-    background-image: url(../img/bg-special-prize-boxes-mobile.png); } }
+    background-image: url(../img/bg-special-prize-boxes-mobile.png); }
+  .winners-chicken p {
+    margin-top: 0; }
+  .winners-header {
+    background-image: url(../img/bg-special-prize-boxes-mobile.png); }
+  .winners {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 600px; }
+    .winners .prize {
+      flex-direction: column; }
+    .winners .prize-desc, .winners .prize-photo, .winners .prize {
+      flex-basis: unset; }
+    .winners .prize-photo img {
+      border-radius: 0; }
+    .winners .prize-desc {
+      padding: 15px 0; }
+      .winners .prize-desc p {
+        text-align: center; }
+    .winners .prize-name {
+      font-size: 14px;
+      line-height: 16px; }
+    .winners .prize-price {
+      font-size: 21px;
+      line-height: 18px; }
+    .winners .prize-name-outer {
+      height: auto;
+      margin-bottom: 10px; }
+  .winners-list-inner {
+    max-height: 190px; }
+  .btn-info {
+    order: 3 !important;
+    margin-top: 20px; } }
 
 @media (max-width: 800px) {
   .mobile-redline {
@@ -2947,7 +3145,13 @@ hr {
     .wide-chicken-help p {
       font-size: 18px;
       line-height: 25px;
-      text-align: center; } }
+      text-align: center; }
+  .winners-chicken {
+    padding: 30px 0 0 !important; }
+    .winners-chicken p {
+      padding: 0 12%;
+      font-size: 21px;
+      line-height: 32px; } }
 
 @media (max-width: 650px) {
   .personal-content .input-field label, .personal-content .input-field input:not([type="checkbox"]), .personal-content .input-field textarea, .personal-content .select2-container .select2-selection--single, .personal-content .select, .personal-content .day-of-birth {
@@ -3002,7 +3206,48 @@ hr {
     padding-left: 0;
     padding-right: 0; }
   .wide-chicken-help.mirror {
-    margin-top: 5px; } }
+    margin-top: 5px; }
+  .winners {
+    margin-left: 20px;
+    margin-right: 20px; }
+    .winners .winners-list p {
+      font-size: 18px;
+      line-height: 15px;
+      margin-bottom: 10px; }
+  .choose-prize .prize-row {
+    padding-left: 25px;
+    padding-right: 25px; }
+  .prize-row .labels-row {
+    display: none; }
+  .prize-row .content-row {
+    flex-direction: column; }
+  .prize-row .photo-col, .prize-row .name-col, .prize-row .coins-col, .prize-row .date-col, .prize-row .status-col {
+    flex-basis: unset; }
+  .prize-row .name-col, .prize-row .coins-col {
+    margin-bottom: 5px; }
+  .prize-row .status-pending, .prize-row .status-sended, .prize-row .status-received {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 13px 11px;
+    font-variant: small-caps;
+    width: 165px;
+    height: auto;
+    background-color: #F3F3F3;
+    border-radius: 5px; }
+  .prize-row .status-pending, .prize-row .status-sended, .prize-row .status-received, .prize-row .prize-btn {
+    width: 243px; }
+  .prize-row .content-row {
+    display: block; }
+    .prize-row .content-row .prize-row-name, .prize-row .content-row .prize-row-coins, .prize-row .content-row .prize-row-date {
+      text-align: left; }
+  .prize-row .photo-col {
+    float: left;
+    height: 100px;
+    width: 130px;
+    margin-right: 10px; }
+  .prize-row .status-col {
+    margin-top: 10px;
+    width: 100%; } }
 
 @media (max-width: 550px) {
   .prize-slider .prize-content-inner {
@@ -3030,7 +3275,10 @@ hr {
     margin-top: 20px; }
   .rules-part {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+  .winners-chicken p {
+    font-size: 21px;
+    line-height: 32px; } }
 
 @media (max-width: 445px) {
   .wide-download-app {
