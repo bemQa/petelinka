@@ -138,6 +138,8 @@
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="check-declined">Чек отклонен</a></li>
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="select-welcome-prize">Выбрать приз за первый чек</a></li>
                     <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="frame-test">iframe для тестов</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="personal-data">Ввод паспортных данных</a></li>
+                    <li><a href="#" class="btn btn-green btn-reg pop-op" data-popup="personal-data-info">Ввод паспортных данных - предупреждение</a></li>
                 </ul>
             </section>
         </div>
@@ -830,7 +832,105 @@
 				</div>
 			</div>
         </div>
-	</div>
+
+        <div id="personal-data" class="popup">
+            <div class="popup-wrap">
+                <a href="#!" class="close-popup js-close-popup">
+                    <img src="img/icon-close-gray.svg">
+                </a>
+                
+                <div class="popup-inner">
+                    <div class="popup-title">внести данные</div>
+                    <div class="popup-error">Ошибочная ошибка</div>
+                    <p class="popup-desc">По законодательству для получения выигрыша требуются паспортные данные и ИНН. Внимательно заполните форму:</p>
+    
+                    <form class="popup-form" novalidate="novalidate">
+                        
+                        <p class="group-label">ФИО</p>
+                        <p class="username-hardcoded">Константин Константинович Константинопольский</p>
+    
+                        <p class="group-label">Дата рождения</p>
+                        <div class="input-field">
+                            <input type="text" name="birth-date" placeholder="(дд.мм.гггг)" required>
+                        </div>
+    
+                        <p class="group-label">Паспортные данные</p>
+                        <div class="input-field pass-data">
+                            <div class="pass-series">
+                                <input type="text" name="pass-series" placeholder="серия" required>
+                            </div>
+    
+                            <div class="pass-number">
+                                <input type="text" name="pass-number" placeholder="номер" required>
+                            </div>
+                        </div>
+    
+                        <div class="input-field">
+                            <input type="text" name="pass-issued-date" placeholder="дата выдачи (дд.мм.гггг)" required>
+                        </div>
+    
+                        <div class="input-field">
+                            <textarea name="pass-issued" placeholder="кем выдан" required></textarea>
+                        </div>
+    
+                        <div class="input-field">
+                            <textarea name="pass-reg-address" placeholder="адрес регистрации" required></textarea>
+                        </div>
+    
+                        <p class="group-label">ИНН</p>
+                        <div class="input-field">
+                            <input type="text" name="inn" placeholder="12 цифр" required>
+                        </div>
+    
+                        <p class="group-label">Фотографии или сканы</p>
+                        <!-- Add class 'reupload' here if we reupload photo -->
+                        <div class="input-field file-input-group">
+                            <input type="file" name="pass-photo-main" id="pass-photo-main" class="dropify" required>
+                            <label for="pass-photo-main">Паспорт, разворот с фотографией</label>
+                        </div>
+    
+                        <!-- Add class 'reupload' here if we reupload photo -->
+                        <div class="input-field file-input-group">
+                            <input type="file" name="pass-photo-reg" id="pass-photo-reg" class="dropify" required>
+                            <label for="pass-photo-reg">Паспорт, разворот с регистрацией</label>
+                        </div>
+    
+                        <!-- Add class 'reupload' here if we reupload photo -->
+                        <div class="input-field file-input-group">
+                            <input type="file" name="pass-photo-inn" id="pass-photo-inn" class="dropify" required>
+                            <label for="pass-photo-inn">ИНН</label>
+                        </div>
+    
+    
+                        <div class="btn-wrap">
+                            <button class="btn btn-green">отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <div id="personal-data-info" class="popup">
+            <div class="popup-wrap">
+                <a href="#!" class="close-popup js-close-popup">
+                    <img src="img/icon-close-gray.svg">
+                </a>
+                
+                <div class="popup-inner">
+                    <div class="align-center">
+                        <img src="/img/icon-info.svg" alt="">
+                    </div>
+                    <p class="popup-desc personal-data-announce">При сумме призов свыше 4000 рублей, для их получения понадобится загрузить паспортные данные и ИНН для уплаты организатором налога за участника.</p>
+    
+                    <div class="btn-wrap">
+                        <button class="btn btn-green js-close-popup">понятно</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 	<!-- Popups END  -->
 
 
@@ -838,7 +938,8 @@
 	<script src="libs/select2/select2.min.js"></script>
 	<script src="libs/jquery.validate.min.js"></script>
 	<script src="libs/scrollbar/jquery.scrollbar.min.js"></script>
-	<script src="libs/jquery.inputmask.min.js"></script>
+    <script src="libs/jquery.inputmask.min.js"></script>
+    <script src="libs/dropify.min.js"></script>
 	<script src="libs/jquery.countdown.min.js"></script>
 	<script src="libs/slick.min.js"></script>
 	<script src="js/script.js"></script>

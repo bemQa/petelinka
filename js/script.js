@@ -105,6 +105,8 @@ $(document).ready(function () {
                     var elem = $(element);
                     if (elem.hasClass("select2-hidden-accessible")) {
                         $(elem).parent().find('.select2-selection--single').addClass('select2'+ errorClass); 
+                    } else if (elem.hasClass("dropify")) {
+                        $(elem).parent().parent().addClass('dropify-' + errorClass)
                     } else {
                         elem.addClass(errorClass);
                     }
@@ -113,6 +115,8 @@ $(document).ready(function () {
                     var elem = $(element);
                     if (elem.hasClass("select2-hidden-accessible")) {
                         $(elem).parent().find('.select2-selection--single').removeClass('select2' + errorClass);
+                    } else if (elem.hasClass("dropify")) {
+                        $(elem).parent().parent().removeClass('dropify-' + errorClass)
                     } else {
                         elem.removeClass(errorClass);
                     }
@@ -239,6 +243,21 @@ $(document).ready(function () {
             }
         });
     });
+
+    if($('.dropify').length) {
+        $('.dropify').dropify({
+            messages: {
+                'default': '',
+                'replace': '',
+                'remove':  '',
+                'error':   ''
+            },
+            tpl: {
+                message: '<div class="align-center upload-status"><img src="img/icon-load-photo.svg" class="upload-photo"><img src="img/icon-reupload.svg" class="reupload-photo"></div>',
+                clearButton: '<button type="button" class="dropify-clear"><img src="img/icon-close.svg"></button>',
+            }
+        });
+    }
 
     /* Init sliders */
     $('.prize-catalogue-slider').slick({
