@@ -1214,7 +1214,7 @@ body {
     color: #000;
     font-weight: bold;
     line-height: 24px;
-    margin: 0 13px; }
+    margin: 0 11px; }
   .header-nav-menu .active {
     border-bottom: 2px solid #FFB81C; }
   .header-nav-menu li {
@@ -2686,7 +2686,9 @@ hr {
     padding: 85px 0 0 220px; }
   .winners .winners-list li {
     font-size: 23px;
-    line-height: 31px; } }
+    line-height: 31px; }
+  .header-nav-menu a {
+    margin: 0 5px; } }
 
 @media (max-width: 1000px) {
   .main-container {
