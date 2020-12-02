@@ -1366,6 +1366,10 @@ body {
     background-position: center; }
   .main-slider .download-apps, .main-slider .reg-receipt {
     margin-top: 35px; }
+  .main-slider .inner-container {
+    height: 100%;
+    display: flex;
+    align-items: center; }
 
 .slider-item {
   position: relative; }
@@ -1384,8 +1388,11 @@ body {
   font-size: 30px;
   line-height: 32px; }
 
-.slide-content {
-  margin-top: 135px; }
+.main-slider .text-supp {
+  margin-top: 15px; }
+
+.main-slider .text-heading {
+  margin-bottom: 0; }
 
 /* Slick slider */
 .slick-dots {
@@ -2698,6 +2705,12 @@ hr {
       font-size: 42px;
       font-weight: bold; }
 
+.winter-bg-boxes-and-tree {
+  background-image: url(/img/bg-winter-boxes-and-tree-min.jpg); }
+
+.winter-bg-boxes-and-snow {
+  background-image: url(/img/bg-winter-boxes-and-snow-min.jpg); }
+
 @media (max-width: 1280px) {
   .header-brand {
     margin-left: 0; }
@@ -2717,7 +2730,9 @@ hr {
     font-size: 23px;
     line-height: 31px; }
   .header-nav-menu a {
-    margin: 0 5px; } }
+    margin: 0 5px; }
+  .slide-content {
+    padding: 0 15px; } }
 
 @media (max-width: 1000px) {
   .main-container {
@@ -2747,6 +2762,7 @@ hr {
   .slide-content {
     margin-top: 0;
     height: 100%;
+    width: 100%;
     padding: 0 14%;
     display: flex;
     align-items: center;
@@ -3283,7 +3299,11 @@ hr {
 @media (max-width: 550px) {
   .prize-slider .prize-content-inner {
     display: flex;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .winter-bg-boxes-and-tree {
+    background-image: url(/img/bg-winter-boxes-and-tree-mob-min.jpg); }
+  .winter-bg-boxes-and-snow {
+    background-image: url(/img/bg-winter-boxes-and-snow-mob-min.jpg); } }
 
 @media (max-width: 450px) {
   .mobile-redline {
