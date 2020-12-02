@@ -186,8 +186,7 @@ a {
   color: inherit;
   cursor: pointer;
   background-color: transparent;
-  text-decoration: none;
-  transition: all .3s linear; }
+  text-decoration: none; }
 
 a:hover,
 a:focus {
@@ -1065,8 +1064,7 @@ body {
   display: inline-block;
   padding: 7px 11px;
   border-radius: 5px;
-  text-align: center;
-  transition: all .3s linear; }
+  text-align: center; }
   .btn.big {
     font-size: 18px;
     padding: 15px 45px;
@@ -1532,14 +1530,22 @@ body {
     text-align: center; }
   .big-pool-promo .prize-name {
     margin: 0;
-    padding: 0; }
+    padding: 0 13%;
+    min-height: 32px; }
   .big-pool-promo .prize-item {
-    height: 270px;
-    min-width: 30%; }
+    height: 273px;
+    min-width: 31%; }
   .big-pool-promo .prize-footer {
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 13px 0; }
   .big-pool-promo .prize-content {
-    height: 203px; }
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    position: relative; }
     .big-pool-promo .prize-content img {
       height: 100%; }
   .big-pool-promo .pool-list {
@@ -1963,7 +1969,8 @@ hr {
     font-size: 23px;
     line-height: 25px;
     padding: 0 6%;
-    margin-bottom: 13px; }
+    margin-bottom: 13px;
+    z-index: 5; }
   .roll-prizes .prize-content-inner {
     padding-top: 12px;
     padding-bottom: 12px; }
@@ -2002,7 +2009,7 @@ hr {
       text-align: left; }
 
 .boxes-v2 {
-  background-image: url(../img/bg-special-prize-boxes.png);
+  background-image: url(../img/bg-prize-boxes-winter-2020-min.jpg);
   height: 269px; }
 
 .roll-results-content .heading-supp {
@@ -2093,13 +2100,17 @@ hr {
   .part-4 .possible-win .prize-content {
     height: 184px;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    position: relative; }
   .part-4 .possible-win .prize-footer {
     height: 88px;
     flex-direction: column; }
   .part-4 .possible-win .prize-name, .part-4 .possible-win .prize-price {
     margin: 0;
     padding: 0; }
+  .part-4 .possible-win .prize-name {
+    min-height: 32px;
+    padding: 0 5%; }
 
 .part-5 .link-to-rules {
   color: #AB2328;
@@ -2336,7 +2347,7 @@ hr {
     width: 101px;
     height: 101px;
     border-radius: 60px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     margin: 0 8px; }
   .trades-imgs.small .item {
     background-size: contain; }
@@ -2668,6 +2679,24 @@ hr {
   line-height: 18px;
   padding-bottom: 3px;
   margin-right: 8px; }
+
+.prize-quantity {
+  position: absolute;
+  width: 88px;
+  top: 55px;
+  right: 0;
+  background-color: #AB2328;
+  padding: 10px 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+  .prize-quantity p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase; }
+    .prize-quantity p.quantity {
+      font-size: 42px;
+      font-weight: bold; }
 
 @media (max-width: 1280px) {
   .header-brand {
@@ -3009,8 +3038,6 @@ hr {
     margin-bottom: 42px; }
   .part-4 .possible-win .prize-item {
     width: 100%; }
-  .part-4 .possible-win .prize-footer {
-    height: 67px; }
   .faq-content {
     flex-direction: column;
     padding-left: 20px;
@@ -3126,7 +3153,9 @@ hr {
     max-height: 190px; }
   .btn-info {
     order: 3 !important;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .pool-list .prize-item {
+    width: 380px; } }
 
 @media (max-width: 800px) {
   .mobile-redline {
@@ -3280,7 +3309,13 @@ hr {
     padding-right: 10px; }
   .winners-chicken p {
     font-size: 21px;
-    line-height: 32px; } }
+    line-height: 32px; }
+  .pool-list .prize-item {
+    width: 100%; }
+  .pool-list .prize-name {
+    padding: 0 0; }
+  .possible-win .prize-name {
+    padding: 0 0; } }
 
 @media (max-width: 445px) {
   .wide-download-app {
