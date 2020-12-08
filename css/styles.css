@@ -2022,6 +2022,7 @@ hr {
 .roll-results-content .heading-supp {
   font-size: 30px;
   line-height: 32px;
+  font-weight: normal;
   text-align: center; }
 
 .countdown {
@@ -2383,8 +2384,9 @@ hr {
   font-size: 20px;
   line-height: 24px; }
 
-.item-domovenok {
-  border: 1px solid #C4C4C4 !important; }
+.brand-i-border {
+  border: 1px solid #C4C4C4 !important;
+  border-radius: 35px; }
 
 .trade-heading, .trade-rule {
   width: 55%;
@@ -2406,6 +2408,7 @@ hr {
   width: 100%; }
   .prize-brand-item .item-preview {
     width: 100%;
+    cursor: pointer;
     display: flex;
     justify-content: space-between; }
     .prize-brand-item .item-preview p {
@@ -2417,7 +2420,7 @@ hr {
       .prize-brand-item .item-preview .item-part.text {
         flex-direction: column;
         align-items: flex-start;
-        flex-basis: 70%;
+        width: 70%;
         position: absolute;
         padding: 7px 0 0 65px; }
     .prize-brand-item .item-preview .arrow {
@@ -2435,15 +2438,24 @@ hr {
       height: 50px;
       background-size: cover;
       background-position: center; }
+    .prize-brand-item .item-preview.active {
+      margin-bottom: 22px; }
   .prize-brand-item .item-content {
     display: none;
-    padding: 0 12px 0 65px;
+    cursor: default;
+    padding: 0 8px 0;
     height: 200px;
     width: 100%;
     font-size: 14px;
     line-height: 16px;
     text-align: left;
     color: #272727; }
+  .prize-brand-item ul {
+    list-style: disc inside; }
+    .prize-brand-item ul li {
+      margin-bottom: 2px; }
+      .prize-brand-item ul li:last-of-type {
+        margin-bottom: 0; }
   .prize-brand-item:last-of-type {
     margin-bottom: 0; }
   .prize-brand-item.active .arrow {
@@ -3363,7 +3375,9 @@ hr {
   .wide-chicken-help {
     padding-top: 10px; }
   .mobile-special .heading {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .prize-brand-item .item-preview .item-part.text {
+    padding: 5px 0 0 55px; } }
 
 @media (min-width: 1000px) {
   .roll-prizes .prize-item:first-of-type() {
@@ -3375,7 +3389,9 @@ hr {
   .faq-wrap {
     margin-bottom: 50px; }
   .mobile-special {
-    display: none !important; } }
+    display: none !important; }
+  .roll-results-content .heading-supp {
+    padding: 0 12%; } }
 
 .popup {
   position: fixed;
