@@ -2228,6 +2228,8 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start; }
+  .faq-content a {
+    color: #7AA92E; }
 
 .faq-wrap {
   flex-basis: 47%;
