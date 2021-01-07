@@ -270,7 +270,12 @@ $(document).ready(function () {
         responsive: [
             {
                 breakpoint: 650,
-                settings: "unslick" // because we need this only on mobiles
+                settings: {
+                    infinite: true,
+                    arrows: true,
+                    slidesToShow: 3,
+                    centerMode: false
+                }
             }
         ]
     });
