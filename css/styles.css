@@ -1439,7 +1439,7 @@ body {
       margin-right: 0; }
 
 .wide-download-app {
-  background: url(../img/bg-big-wood-2.png) no-repeat;
+  background: url(../img/bg-big-wood-2-2.png) no-repeat;
   background-size: cover;
   background-position: center;
   height: 454px;
@@ -3360,7 +3360,7 @@ hr {
 
 @media (max-width: 445px) {
   .wide-download-app {
-    background: url(../img/mobile-bg-with-phones.png) no-repeat;
+    background: url(../img/mobile-bg-with-phones-2.png) no-repeat;
     height: 677px;
     background-position: center;
     padding: 50px 10% 0; }
