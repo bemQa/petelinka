@@ -2728,6 +2728,9 @@ hr {
 .winter-bg-boxes-and-snow {
   background-image: url(/img/bg-winter-boxes-and-snow-min.jpg); }
 
+.bg-updated-club {
+  background-image: url(../img/bg-updated-club.png); }
+
 @media (max-width: 1280px) {
   .header-brand {
     margin-left: 0; }
@@ -3366,6 +3369,10 @@ hr {
     padding: 50px 10% 0; }
   .wide-chicken-help.rules {
     height: auto; } }
+
+@media (max-width:  375px) {
+  .bg-updated-club {
+    background-image: url(../img/bg-updated-club-mob.png); } }
 
 @media (max-width: 360px) {
   .level-container {
