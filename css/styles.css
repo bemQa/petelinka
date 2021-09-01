@@ -2729,7 +2729,13 @@ hr {
   background-image: url(/img/bg-winter-boxes-and-snow-min.jpg); }
 
 .bg-updated-club {
-  background-image: url(../img/bg-updated-club.png); }
+  background-image: url(../img/bg-updated-club.jpg); }
+
+.text-heading2 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 46px;
+  color: #AB2328; }
 
 @media (max-width: 1280px) {
   .header-brand {
@@ -2766,7 +2772,7 @@ hr {
     align-items: center; }
     .download-apps a {
       margin: 0 0 20px 0; }
-  .text-heading, .text-supp {
+  .text-heading, .text-heading2, .text-supp {
     text-align: center; }
   .text-supp {
     font-size: 18px;
@@ -2774,6 +2780,9 @@ hr {
   .heading, .text-heading {
     font-size: 28px;
     line-height: 31px; }
+  .text-heading2 {
+    font-size: 20px;
+    line-height: 24px; }
   .btn, .btn.big {
     width: 243px;
     height: 50px;
